@@ -1,4 +1,4 @@
-"""Correlate raw energy use per square metre with metadata, weather, and time."""
+"""Correlate custom-cleaned energy use per square metre with metadata, weather, and time."""
 
 from pathlib import Path
 
@@ -11,15 +11,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# Select one raw meter dataset. Divide readings by metadata sqm to compare per floor area.
-data_type = "raw"
+# Select one custom-cleaned meter dataset. Divide readings by metadata sqm.
+data_type = "my_cleand_custom"
 meter_type = "electricity"  # e.g. electricity, gas, chilledwater, solar
 
 project_folder = Path(__file__).resolve().parent.parent
-meter_file = project_folder / "data" / "meters" / data_type / f"{meter_type}.csv"
-weather_file = project_folder / "data" / "weather" / "weather.csv"
+meter_file = project_folder / "data" / "meters" / data_type / f"{meter_type}_cleaned.csv"
+weather_file = project_folder / "data" / "meters" / data_type / "weather_cleaned.csv"
 metadata_file = project_folder / "data" / "metadata" / "metadata.csv"
-output_folder = project_folder / "figures" / "raw" / f"correlation_{data_type}_{meter_type}"
+output_folder = project_folder / "figures" / "my_cleand_custom" / f"correlation_{data_type}_{meter_type}"
 
 
 def save_correlation_plot(matrix, title, output_path):

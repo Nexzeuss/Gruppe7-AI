@@ -1,4 +1,4 @@
-"""Plot raw electricity power density by time and building characteristics."""
+"""Plot custom-cleaned electricity power density by time and building characteristics."""
 
 from pathlib import Path
 
@@ -11,11 +11,11 @@ import seaborn as sns
 
 
 # Keep the data source easy to switch when a cleaned-data version is needed.
-data_type = "raw"
+data_type = "my_cleand_custom"
 project_folder = Path(__file__).resolve().parent.parent
-meter_file = project_folder / "data" / "meters" / data_type / "electricity.csv"
+meter_file = project_folder / "data" / "meters" / data_type / "electricity_cleaned.csv"
 metadata_file = project_folder / "data" / "metadata" / "metadata.csv"
-output_folder = project_folder / "figures" / "raw" / f"temporal_analysis_{data_type}"
+output_folder = project_folder / "figures" / "my_cleand_custom" / f"temporal_analysis_{data_type}"
 
 
 def check_csv(path):

@@ -7,10 +7,10 @@ import pandas as pd
 
 
 project_folder = Path(__file__).resolve().parent.parent
-# Set to "raw", "cleaned", or "my_cleaned" to switch input data.
-dataset_name = "raw"
+dataset_name = "my_cleand_custom"
 data_folder = project_folder / "data" / "meters" / dataset_name
-output_folder = project_folder / "figures" / "raw" / f"sequential_analysis_{dataset_name}"
+weather_file = data_folder / "weather_cleaned.csv"
+output_folder = project_folder / "figures" / "my_cleand_custom" / f"sequential_analysis_{dataset_name}"
 
 LINE_COLOR = "#2a78d6"
 BAND_COLOR = "#86b6ef"
@@ -57,13 +57,14 @@ def plot_meter_type(ax, name, daily):
 
 def meter_files():
 	"""Return CSVs for the selected input layout, with a clear missing-data error."""
-	if dataset_name not in {"raw", "cleaned", "my_cleaned"}:
-		raise ValueError("dataset_name must be 'raw', 'cleaned', or 'my_cleaned'.")
+	if dataset_name not in {"raw", "cleaned", "my_cleaned", "my_cleand_custom"}:
+		raise ValueError("Unsupported dataset_name.")
 	if not data_folder.is_dir():
 		raise FileNotFoundError(f"Meter data folder not found: {data_folder}")
 	files = sorted(data_folder.glob("*.csv"))
-	if dataset_name == "my_cleaned":
+	if dataset_name in {"my_cleaned", "my_cleand_custom"}:
 		files = [path for path in files if path.name.endswith("_cleaned.csv")]
+	files = [path for path in files if path.name != weather_file.name]
 	if not files:
 		raise FileNotFoundError(f"No meter CSV files found in {data_folder}.")
 	return files
@@ -71,6 +72,11 @@ def meter_files():
 
 def main():
 	files = meter_files()
+	if not weather_file.is_file():
+		raise FileNotFoundError(f"Weather data file not found: {weather_file}")
+	with weather_file.open(encoding="utf-8") as csv_file:
+		if csv_file.readline().strip() == "version https://git-lfs.github.com/spec/v1":
+			raise RuntimeError(f"{weather_file.name} is a Git LFS pointer, not CSV data.")
 	output_folder.mkdir(parents=True, exist_ok=True)
 	columns = 2
 	rows = math.ceil(len(files) / columns)

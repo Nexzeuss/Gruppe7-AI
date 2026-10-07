@@ -80,6 +80,37 @@ def filter_quantile_outliers(data):
     )
     return filtered_data
 
+
+def pad_hourly_sequence(data, group_columns=None):
+    """Add missing hourly timestamps, leaving newly created readings as NaN."""
+    group_columns = group_columns or []
+    padded_groups = []
+
+    groups = data.groupby(group_columns, dropna=False) if group_columns else [(None, data)]
+    for key, group in groups:
+        group = group.drop(columns=group_columns).drop_duplicates(
+            "timestamp", keep="first"
+        )
+        group = group.set_index("timestamp").sort_index()
+        if group.empty:
+            continue
+
+        full_range = pd.date_range(
+            group.index.min(), group.index.max(), freq="h", name="timestamp"
+        )
+        group = group.reindex(full_range)
+
+        if group_columns:
+            key_values = key if isinstance(key, tuple) else (key,)
+            for column, value in zip(group_columns, key_values):
+                group[column] = value
+
+        padded_groups.append(group.reset_index())
+
+    if not padded_groups:
+        return data.copy()
+    return pd.concat(padded_groups, ignore_index=True)[data.columns]
+
 def remove_id_dupes(ids):
     cleaned_ids = []
     for meter_id in ids:
@@ -107,6 +138,11 @@ def main():
     chilledwater_data = pd.read_csv(chilledwater_file, parse_dates=(["timestamp"]))
     weather_data = pd.read_csv(weather_file, parse_dates=(["timestamp"]))
     metadata = pd.read_csv(metadata_file)
+
+    #### pad missing hourly timestamps
+    electricity_data = pad_hourly_sequence(electricity_data)
+    chilledwater_data = pad_hourly_sequence(chilledwater_data)
+    weather_data = pad_hourly_sequence(weather_data, group_columns=["site_id"])
 
     output_folder.mkdir(parents=True, exist_ok=True)
 
