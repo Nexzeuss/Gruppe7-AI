@@ -1,4 +1,4 @@
-"""Correlate cleaned energy use per square metre with metadata, weather, and time."""
+"""Correlate raw energy use per square metre with metadata, weather, and time."""
 
 from pathlib import Path
 
@@ -11,13 +11,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# Select one cleaned meter dataset. Values are assumed to use the units in the
-# repository's cleaned files; divide by metadata sqm to compare per floor area.
-data_type = "cleaned"
+# Select one raw meter dataset. Divide readings by metadata sqm to compare per floor area.
+data_type = "raw"
 meter_type = "electricity"  # e.g. electricity, gas, chilledwater, solar
 
 project_folder = Path(__file__).resolve().parent.parent
-meter_file = project_folder / "data" / "meters" / data_type / f"{meter_type}_cleaned.csv"
+meter_file = project_folder / "data" / "meters" / data_type / f"{meter_type}.csv"
 weather_file = project_folder / "data" / "weather" / "weather.csv"
 metadata_file = project_folder / "data" / "metadata" / "metadata.csv"
 output_folder = project_folder / "figures" / f"correlation_{data_type}_{meter_type}"
@@ -106,7 +105,7 @@ def main():
 	)
 	additional_meter_types = ("steam", "chilledwater", "hotwater", "solar")
 	for additional_type in additional_meter_types:
-		additional_file = project_folder / "data" / "meters" / "cleaned" / f"{additional_type}_cleaned.csv"
+		additional_file = project_folder / "data" / "meters" / "raw" / f"{additional_type}.csv"
 		if not additional_file.is_file():
 			print(f"Skipping {additional_type}: file not found ({additional_file.name}).")
 			continue

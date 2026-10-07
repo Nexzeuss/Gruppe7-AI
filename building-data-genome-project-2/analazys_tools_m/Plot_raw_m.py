@@ -7,8 +7,10 @@ import pandas as pd
 
 
 project_folder = Path(__file__).resolve().parent.parent
-data_folder = project_folder / "data" / "meters" / "raw"
+# Set to "raw", "cleaned", or "my_cleaned" to switch input data.
 dataset_name = "raw"
+data_folder = project_folder / "data" / "meters" / dataset_name
+output_folder = project_folder / "figures" / f"sequential_analysis_{dataset_name}"
 
 LINE_COLOR = "#2a78d6"
 BAND_COLOR = "#86b6ef"
@@ -53,33 +55,58 @@ def plot_meter_type(ax, name, daily):
 	ax.tick_params(colors=TEXT_SECONDARY, labelsize=8)
 
 
-files = sorted(data_folder.glob("*.csv"))
-if not files:
-	raise FileNotFoundError(
-		f"No CSV files found in {data_folder}. Check that the raw meter data is present."
+def meter_files():
+	"""Return CSVs for the selected input layout, with a clear missing-data error."""
+	if dataset_name not in {"raw", "cleaned", "my_cleaned"}:
+		raise ValueError("dataset_name must be 'raw', 'cleaned', or 'my_cleaned'.")
+	if not data_folder.is_dir():
+		raise FileNotFoundError(f"Meter data folder not found: {data_folder}")
+	files = sorted(data_folder.glob("*.csv"))
+	if dataset_name == "my_cleaned":
+		files = [path for path in files if path.name.endswith("_cleaned.csv")]
+	if not files:
+		raise FileNotFoundError(f"No meter CSV files found in {data_folder}.")
+	return files
+
+
+def main():
+	files = meter_files()
+	output_folder.mkdir(parents=True, exist_ok=True)
+	columns = 2
+	rows = math.ceil(len(files) / columns)
+	figure, axes = plt.subplots(rows, columns, figsize=(16, 3.5 * rows), sharex=True, squeeze=False)
+	axes = axes.flatten()
+
+	for ax, file_path in zip(axes, files):
+		name = file_path.stem.removesuffix("_cleaned")
+		print(f"Loading {file_path.name} ...")
+		daily = daily_per_meter(file_path)
+		plot_meter_type(ax, name, daily)
+
+		# Also save each meter type as a standalone sequential-data plot.
+		individual_figure, individual_ax = plt.subplots(figsize=(12, 5))
+		plot_meter_type(individual_ax, name, daily)
+		individual_ax.set_xlabel("Date")
+		individual_figure.suptitle(f"Daily meter readings — {name} ({dataset_name} data)")
+		individual_figure.tight_layout()
+		individual_figure.savefig(output_folder / f"daily_{name}.png", dpi=180, bbox_inches="tight")
+		plt.close(individual_figure)
+
+	for ax in axes[len(files):]:
+		ax.set_visible(False)
+
+	figure.suptitle(f"Daily meter readings per meter type — {dataset_name} data", fontsize=14, x=0.01, ha="left")
+	figure.text(
+		0.01, 0.955,
+		"Line: median meter's daily total. Band: middle 50% of meters (25th–75th percentile). "
+		"Each panel has its own y-scale.",
+		fontsize=9, color=TEXT_SECONDARY, ha="left",
 	)
+	figure.tight_layout(rect=(0, 0, 1, 0.95))
+	figure.savefig(output_folder / f"daily_meter_readings_{dataset_name}.png", dpi=180, bbox_inches="tight")
+	plt.close(figure)
+	print(f"Saved sequential plots for {len(files)} meter types in: {output_folder}")
 
-columns = 2
-rows = math.ceil(len(files) / columns)
 
-figure, axes = plt.subplots(rows, columns, figsize=(16, 3 * rows), sharex=True)
-axes = axes.flatten()
-
-for ax, file_path in zip(axes, files):
-	name = file_path.stem.replace("_cleaned", "")
-	print(f"Loading {file_path.name} ...")
-	plot_meter_type(ax, name, daily_per_meter(file_path))
-
-# Hide empty panels if the number of files is odd
-for ax in axes[len(files):]:
-	ax.set_visible(False)
-
-figure.suptitle(f"Daily meter readings per meter type - {dataset_name} data", fontsize=14, x=0.01, ha="left")
-figure.text(
-	0.01, 0.955,
-	"Line: median meter's daily total.  Band: middle 50% of meters (25th-75th percentile).  "
-	"Each panel has its own y-scale.",
-	fontsize=9, color=TEXT_SECONDARY, ha="left",
-)
-figure.tight_layout(rect=(0, 0, 1, 0.95))
-plt.show()
+if __name__ == "__main__":
+	main()
