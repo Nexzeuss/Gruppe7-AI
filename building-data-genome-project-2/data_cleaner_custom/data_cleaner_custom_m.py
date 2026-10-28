@@ -15,12 +15,16 @@ upper_quantile = 0.75
 iqr_multiplier = 1.5
 rolling_window = 720  # 30 days of hourly readings
 min_periods = 24  # allow rolling bounds after one day of readings
+remove_meters_over_missing_threshold = False
+missing_data_threshold = 0.05
 
 
 ## data paths/managment
 data = "raw"
 project_folder = Path(__file__).resolve().parent.parent
 output_folder = project_folder / "data" / "meters" / "my_cleand_custom"
+report_folder = Path(__file__).resolve().parent / "new_data_report"
+removal_report_rows = []
 
 electricity_file = project_folder / "data" / "meters" / "raw" / "electricity.csv"
 chilledwater_file = project_folder / "data" / "meters" / "raw" / "chilledwater.csv"
@@ -35,7 +39,7 @@ metadata_file = project_folder / "data" / "metadata" / "metadata.csv"
 
 #### handle missing data
 
-def find_missing_data_ids(data, *, check_negative_and_runs=False):
+def find_missing_data_ids(data, *, check_negative_and_runs=False, report=None):
 
     protected_columns = [column for column in ("timestamp", "site_id") if column in data]
     measurement_data = data.drop(columns=protected_columns)
@@ -45,10 +49,15 @@ def find_missing_data_ids(data, *, check_negative_and_runs=False):
     for col in measurement_data.columns:
         if measurement_data[col].nunique() <= uniqe_value_threshold:
             ids_to_remove.append(col)
+    if report is not None:
+        report("single-value columns", ids_to_remove)
 
     ## remove duplicate columns
     duplicate_columns = measurement_data.T.duplicated()
-    ids_to_remove.extend(measurement_data.columns[duplicate_columns])
+    duplicate_ids = list(measurement_data.columns[duplicate_columns])
+    ids_to_remove.extend(duplicate_ids)
+    if report is not None:
+        report("duplicate columns", duplicate_ids)
 
     if check_negative_and_runs:
         numeric_data = measurement_data.select_dtypes(include="number")
@@ -56,7 +65,10 @@ def find_missing_data_ids(data, *, check_negative_and_runs=False):
         ## handle columns whose non-missing numeric values are all negative
         has_values = numeric_data.notna().any()
         only_negative = numeric_data.lt(0).where(numeric_data.notna(), True).all()
-        ids_to_remove.extend(numeric_data.columns[has_values & only_negative])
+        negative_ids = list(numeric_data.columns[has_values & only_negative])
+        ids_to_remove.extend(negative_ids)
+        if report is not None:
+            report("all-negative readings", negative_ids)
 
         ## handle long consecutive runs of missing or zero readings
         invalid_readings = numeric_data.isna() | numeric_data.eq(0)
@@ -67,7 +79,10 @@ def find_missing_data_ids(data, *, check_negative_and_runs=False):
             .ge(consecutive_missing_threshold)
             .any()
         )
-        ids_to_remove.extend(long_invalid_run[long_invalid_run].index)
+        run_ids = list(long_invalid_run[long_invalid_run].index)
+        ids_to_remove.extend(run_ids)
+        if report is not None:
+            report(f"long missing/zero run (≥{consecutive_missing_threshold} hours)", run_ids)
 
     return remove_id_dupes(ids_to_remove)
 
@@ -164,14 +179,42 @@ def clean_and_save_meter(file_path, ids_already_found):
     check_negative_and_runs = file_path.stem == "electricity"
 
     print(f"Analysing {file_path.stem} data")
+    def log_removals(reason, ids):
+        unique_ids = remove_id_dupes(ids)
+        print(f"  Removed by {reason}: {len(unique_ids)} meter(s): {unique_ids}")
+        removal_report_rows.append({
+            "data_type": file_path.stem,
+            "process": reason,
+            "quantity": len(unique_ids),
+        })
+
     ids_to_remove = find_missing_data_ids(
-        meter_data, check_negative_and_runs=check_negative_and_runs
+        meter_data, check_negative_and_runs=check_negative_and_runs,
+        report=log_removals,
     )
+    if remove_meters_over_missing_threshold:
+        measurement_columns = [c for c in meter_data.columns if c not in ("timestamp", "site_id")]
+        missing_share = meter_data[measurement_columns].isna().mean()
+        missing_ids = list(missing_share[missing_share >= missing_data_threshold].index)
+        log_removals(f"missing data ≥{missing_data_threshold:.0%}", missing_ids)
+        ids_to_remove.extend(missing_ids)
+    ids_to_remove = remove_id_dupes(ids_to_remove)
     new_ids = [meter_id for meter_id in ids_to_remove if meter_id not in ids_already_found]
     ids_already_found.extend(new_ids)
-    print(f"{len(new_ids)} new solutions found")
-
     cleaned_data = filter_rolling_iqr_outliers(meter_data.drop(columns=ids_to_remove))
+    numeric_columns = cleaned_data.select_dtypes(include="number").columns
+    before_outlier_filter = meter_data.drop(columns=ids_to_remove)[numeric_columns]
+    outlier_count = int((before_outlier_filter.notna() & cleaned_data[numeric_columns].isna()).sum().sum())
+    print(f"  Outlier readings replaced with NaN: {outlier_count}")
+    removal_report_rows.append({
+        "data_type": file_path.stem,
+        "process": "rolling-IQR outlier readings removed",
+        "quantity": outlier_count,
+    })
+    if "timestamp" in cleaned_data:
+        indexed = cleaned_data.set_index("timestamp")
+        indexed[numeric_columns] = indexed[numeric_columns].interpolate(method="time").bfill()
+        cleaned_data = indexed.reset_index()
     output_file = output_folder / f"{file_path.stem}_cleaned.csv"
     cleaned_data.to_csv(output_file, index=False)
     print(f"Saved {output_file}")
@@ -220,15 +263,36 @@ def main():
 
     #### clean weather data
     print("Analysing weather data")
+    def log_weather_removals(reason, ids):
+        unique_ids = remove_id_dupes(ids)
+        print(f"  Removed by {reason}: {len(unique_ids)} column(s): {unique_ids}")
+        removal_report_rows.append({
+            "data_type": "weather",
+            "process": reason,
+            "quantity": len(unique_ids),
+        })
+
     ids_weather = find_missing_data_ids(
-        weather_data, check_negative_and_runs=True
+        weather_data, check_negative_and_runs=True, report=log_weather_removals
     )
     new_weather_ids = [meter_id for meter_id in ids_weather if meter_id not in ids]
     ids.extend(new_weather_ids)
     print(f"{len(new_weather_ids)} new solutions found")
     weather_data = filter_weather_by_site(weather_data.drop(columns=ids_weather))
+    numeric_columns = weather_data.select_dtypes(include="number").columns.drop("site_id", errors="ignore")
+    weather_data = weather_data.sort_values(["site_id", "timestamp"])
+    weather_data[numeric_columns] = weather_data.groupby("site_id", dropna=False)[numeric_columns].transform(
+        lambda values: values.interpolate().bfill()
+    )
     weather_data.to_csv(output_folder / "weather_cleaned.csv", index=False)
     print(f"Saved {output_folder / 'weather_cleaned.csv'}")
+
+    report_folder.mkdir(parents=True, exist_ok=True)
+    report_file = report_folder / "meter_removal_quantities.csv"
+    pd.DataFrame(removal_report_rows, columns=["data_type", "process", "quantity"]).to_csv(
+        report_file, index=False
+    )
+    print(f"Saved removal quantities report: {report_file}")
 
     print(f"Finished, total count {len(ids)}, ids: {ids}")
 
