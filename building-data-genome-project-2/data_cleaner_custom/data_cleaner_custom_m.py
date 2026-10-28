@@ -15,7 +15,7 @@ upper_quantile = 0.75
 iqr_multiplier = 1.5
 rolling_window = 720  # 30 days of hourly readings
 min_periods = 24  # allow rolling bounds after one day of readings
-remove_meters_over_missing_threshold = False
+remove_meters_over_missing_threshold = True
 missing_data_threshold = 0.05
 
 
