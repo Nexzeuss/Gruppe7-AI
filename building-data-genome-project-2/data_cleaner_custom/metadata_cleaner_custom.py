@@ -18,10 +18,10 @@ min_energy_coverage = 0.5  # share of the hours (2016-2017) that must have readi
 meter_types = ["electricity", "chilledwater", "steam", "hotwater", "gas", "water", "irrigation", "solar"]
 
 # columns kept before feature selection, the rest are duplicates (sqft, kaggle ids)
-# or too sparse to be useful (<15% filled: eui, occupants, rating, energystarscore, ...)
+# or not selected for this output (sqft, Kaggle IDs, ratings, etc.).
 columns_to_keep = [
-    "site_id", "primaryspaceusage", "sub_primaryspaceusage", "timezone",
-    "sqm", "yearbuilt", "numberoffloors", "lat", "lng",
+    "site_id", "primaryspaceusage", "sub_primaryspaceusage", "heatingtype", "timezone",
+    "sqm", "yearbuilt", "numberoffloors", "lat", "lng", "occupants",
 ]
 
 # rows missing any of these are dropped
