@@ -5,7 +5,7 @@ from tkinter import ttk
 import pandas as pd
 
 
-data_folder = Path(__file__).parent / "data" / "meters" / "cleaned"
+data_folder = Path(__file__).parent.parent / "data" / "meters" / "cleaned"
 meter_files = sorted(path.stem for path in data_folder.glob("*.csv"))
 data = pd.DataFrame()
 

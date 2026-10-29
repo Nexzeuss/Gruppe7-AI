@@ -6,7 +6,7 @@ from matplotlib.ticker import StrMethodFormatter
 import pandas as pd
 
 
-data_folder = Path(__file__).parent / "data" / "meters" / "cleaned"
+data_folder = Path(__file__).parent.parent / "data" / "meters" / "cleaned"
 dataset_name = "cleaned"
 
 LINE_COLOR = "#2a78d6"

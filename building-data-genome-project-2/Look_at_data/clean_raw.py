@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 
-raw_folder = Path(__file__).parent / "data" / "meters" / "raw"
-output_folder = Path(__file__).parent / "data" / "meters" / "my_cleaned"
+raw_folder = Path(__file__).parent.parent / "data" / "meters" / "raw"
+output_folder = Path(__file__).parent.parent / "data" / "meters" / "my_cleaned"
 
 # A building always uses some electricity, so a zero reading means the meter dropped out.
 # For the other meter types zero is a real value (no heating in summer, no irrigation in winter, ...)

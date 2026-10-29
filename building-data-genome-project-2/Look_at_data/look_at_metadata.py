@@ -5,7 +5,7 @@ from tkinter import ttk
 import pandas as pd
 
 
-file_path = Path(__file__).parent / "data" / "metadata" / "metadata.csv"
+file_path = Path(__file__).parent.parent / "data" / "metadata" / "metadata.csv"
 data = pd.read_csv(file_path)
 
 meter_types = ["electricity", "chilledwater", "steam", "hotwater", "gas", "water", "irrigation", "solar"]
