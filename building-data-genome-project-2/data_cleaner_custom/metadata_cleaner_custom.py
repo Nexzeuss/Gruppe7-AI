@@ -56,27 +56,33 @@ def generate_features(metadata):
     return features
 
 
-def annual_energy(meter):
-    """Yearly kWh per building over the whole period (2016-2017), NaN if too few readings."""
+def total_energy(meter):
+    """Total kWh per building over the whole period (2016-2017), NaN if too few readings.
+    Also returns the length of the period in hours."""
     meter_file = cleaned_meter_folder / f"{meter}_cleaned.csv"
     readings = pd.read_csv(meter_file, parse_dates=["timestamp"], index_col="timestamp")
 
-    # outliers and gaps are NaN after cleaning, so scale the mean hourly reading up to a full year
+    # outliers and gaps are NaN after cleaning, so scale the mean hourly reading up to the whole period
     coverage = readings.notna().sum() / len(readings)
-    return (readings.mean() * hours_per_year).where(coverage >= min_energy_coverage)
+    total = (readings.mean() * len(readings)).where(coverage >= min_energy_coverage)
+    return total, len(readings)
 
 
 def add_energy_intensity(metadata):
-    """Add electricity energy intensity (kWh/sqm/year)."""
+    """Add total electricity use (kWh, 2016-2017) and energy intensity (kWh/sqm/year)."""
     features = metadata.copy()
     if not (cleaned_meter_folder / "electricity_cleaned.csv").exists():
         print("No cleaned electricity file, energy intensity left as NaN")
+        features["total_energy"] = np.nan
         features["energy_intensity"] = np.nan
         return features
 
     # only electricity, chilledwater/hotwater use other units at some sites (Eagle, Fox)
     # and give impossible values like 100 000+ kWh/sqm/year
-    features["energy_intensity"] = annual_energy("electricity").reindex(features.index) / features["sqm"]
+    total, hours = total_energy("electricity")
+    features["total_energy"] = total.reindex(features.index)
+    years = hours / hours_per_year
+    features["energy_intensity"] = features["total_energy"] / years / features["sqm"]
     print(f"Energy intensity found for {features['energy_intensity'].notna().sum()} buildings")
     return features
 

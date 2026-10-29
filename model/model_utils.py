@@ -1,7 +1,6 @@
 """Shared loading, feature preparation, and cross-validation for model scripts."""
 
 from pathlib import Path
-import json
 
 import numpy as np
 import pandas as pd
@@ -22,7 +21,6 @@ TARGET = "meter_reading"
 RANDOM_STATE = 42
 N_BUILDINGS = 100
 N_SPLITS = 5
-MAX_DIAGNOSTIC_POINTS = 50_000
 WEATHER_FEATURES = ["airTemperature", "dewTemperature", "windSpeed", "cloudCoverage", "seaLvlPressure", "precipDepth1HR"]
 TIME_FEATURES = ["hour", "weekday", "month", "dayofyear"]
 
@@ -90,12 +88,10 @@ def evaluate_cv(model_name, estimator, *, scale_numeric=False):
     from sklearn.model_selection import GroupKFold
 
     data, features = load_data()
-    estimator_parameters = json.dumps(estimator.get_params(deep=False), sort_keys=True, default=str)
     if data["building_id"].nunique() < N_SPLITS:
         raise ValueError(f"Need at least {N_SPLITS} buildings for grouped CV.")
     splitter = GroupKFold(n_splits=N_SPLITS)
     results = []
-    oof_predictions = []
     y = np.log1p(data[TARGET].clip(lower=0))
     groups = data["building_id"]
     print(f"{model_name}: {len(data):,} rows, {groups.nunique()} buildings, {len(features)} features")
@@ -110,17 +106,9 @@ def evaluate_cv(model_name, estimator, *, scale_numeric=False):
         pipeline.fit(train_x, train_y)
         predictions = np.maximum(0, np.expm1(pipeline.predict(valid_x)))
         actual = data.iloc[valid_idx][TARGET].to_numpy()
-        oof_predictions.append(pd.DataFrame({
-            "model": model_name,
-            "fold": fold,
-            "building_id": groups.iloc[valid_idx].to_numpy(),
-            "actual": actual,
-            "predicted": predictions,
-        }))
         rmse = float(np.sqrt(mean_squared_error(actual, predictions)))
         results.append({
             "model": model_name,
-            "parameters": estimator_parameters,
             "fold": fold,
             "train_rows": len(train_idx),
             "validation_rows": len(valid_idx),
@@ -136,13 +124,4 @@ def evaluate_cv(model_name, estimator, *, scale_numeric=False):
     output = PERFORMANCE_FOLDER / f"{model_name.lower().replace(' ', '_')}_performance.csv"
     pd.DataFrame(results).to_csv(output, index=False)
     print(f"Saved {output}")
-
-    predictions = pd.concat(oof_predictions, ignore_index=True)
-    if len(predictions) > MAX_DIAGNOSTIC_POINTS:
-        predictions = predictions.sample(MAX_DIAGNOSTIC_POINTS, random_state=RANDOM_STATE)
-    predictions.to_csv(
-        PERFORMANCE_FOLDER / f"{model_name.lower().replace(' ', '_')}_oof_predictions.csv",
-        index=False,
-    )
-    print(f"Saved out-of-fold predictions for diagnostic plots ({len(predictions):,} rows)")
     return pd.DataFrame(results)
