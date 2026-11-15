@@ -1,0 +1,510 @@
+building_id,electricity_density,site_id,T_amb,sqm,timezone,yearbuilt,numberoffloors,occupants,rating,primaryspaceusage,sub_primaryspaceusage
+Robin_public_Carolina,112.07719197469046,Robin,11.842306594347702,10984.0,Europe/London,,6.0,,C,Public services,Library
+Robin_office_Dina,74.17303420365536,Robin,11.842306594347702,4213.0,Europe/London,,4.0,,C,Office,Office
+Robin_office_Sammie,150.43325249895875,Robin,11.842306594347702,4802.0,Europe/London,1930.0,8.0,,F,Office,Office
+Robin_education_Lashandra,161.78156117978148,Robin,11.842306594347702,9061.0,Europe/London,2005.0,10.0,,F,Education,College Classroom
+Robin_office_Gayle,124.61626770007209,Robin,11.842306594347702,4161.0,Europe/London,1919.0,5.0,,,Office,Office
+Robin_office_Wai,89.99372638863203,Robin,11.842306594347702,16221.0,Europe/London,1960.0,12.0,,F,Office,Office
+Robin_lodging_Elmer,85.9163512336644,Robin,11.842306594347702,9565.0,Europe/London,1968.0,7.0,,G,Lodging/residential,Dormitory
+Robin_office_Addie,120.51053535117056,Robin,11.842306594347702,1495.0,Europe/London,1965.0,3.0,,,Office,Office
+Robin_education_Kiera,145.41677475015948,Robin,11.842306594347702,4703.0,Europe/London,,5.0,,G,Education,College Classroom
+Robin_lodging_Pricilla,119.3933685804211,Robin,11.842306594347702,4607.0,Europe/London,1998.0,8.0,,E,Lodging/residential,Dormitory
+Robin_office_Serena,159.84037023048955,Robin,11.842306594347702,2833.1,Europe/London,1997.0,8.0,,D,Office,Office
+Robin_office_Adolph,179.8290491672975,Robin,11.842306594347702,1321.0,Europe/London,,4.0,,,Office,Office
+Robin_office_Lindsay,74.72205125046659,Robin,11.842306594347702,5358.0,Europe/London,,5.0,,C,Office,Office
+Robin_lodging_Oliva,79.95890589555962,Robin,11.842306594347702,6013.0,Europe/London,1960.0,8.0,,C,Lodging/residential,Dormitory
+Robin_office_Victor,125.7904570488722,Robin,11.842306594347702,3724.0,Europe/London,,4.0,,C,Office,Office
+Robin_public_Cami,117.44295150161567,Robin,11.842306594347702,5261.0,Europe/London,1900.0,6.0,,E,Public services,Library
+Robin_education_Kristopher,192.03164816215266,Robin,11.842306594347702,5686.0,Europe/London,1989.0,6.0,,E,Education,College Laboratory
+Robin_education_Billi,93.43596901685393,Robin,11.842306594347702,3560.0,Europe/London,1900.0,6.0,,D,Education,College Laboratory
+Robin_office_Donald,172.86400077585083,Robin,11.842306594347702,7669.0,Europe/London,1977.0,7.0,,F,Office,Office
+Robin_office_Soledad,121.35594482758621,Robin,11.842306594347702,957.0,Europe/London,1970.0,2.0,,E,Office,Office
+Robin_lodging_Donna,74.1244174751491,Robin,11.842306594347702,2515.0,Europe/London,,6.0,,D,Lodging/residential,Dormitory
+Robin_office_Zelma,126.79782295911659,Robin,11.842306594347702,7607.0,Europe/London,1960.0,8.0,,F,Office,Office
+Robin_lodging_Renea,82.57091539065773,Robin,11.842306594347702,9548.0,Europe/London,1956.0,7.0,,E,Lodging/residential,Dormitory
+Robin_education_Karyl,182.15107282754008,Robin,11.842306594347702,2992.0,Europe/London,,6.0,,E,Education,College Laboratory
+Robin_lodging_Janie,168.24924643145485,Robin,11.842306594347702,6193.0,Europe/London,1930.0,7.0,,E,Lodging/residential,Dormitory
+Fox_lodging_Stephen,89.9254248912054,Fox,25.075584311937067,8019.7,US/Mountain,1956.0,,,,Lodging/residential,Dormitory
+Fox_education_Virginia,75.80151681132553,Fox,25.075584311937067,1186.7,US/Mountain,,,,,Education,College Classroom
+Fox_lodging_Stephan,78.97640588965763,Fox,25.075584311937067,3382.2,US/Mountain,1940.0,,,,Lodging/residential,Dormitory
+Fox_office_Israel,94.31551617163471,Fox,25.075584311937067,11282.1,US/Mountain,1983.0,,,,Office,Office
+Fox_education_Lilly,133.86224083260464,Fox,25.075584311937067,12236.3,US/Mountain,1991.0,,,,Education,College Laboratory
+Fox_retail_Manie,134.92651616127958,Fox,25.075584311937067,4201.4,US/Mountain,1982.0,,,,Retail,Retail
+Fox_assembly_Emma,112.67850783824038,Fox,25.075584311937067,13293.8,US/Mountain,1964.0,,,,Entertainment/public assembly,Museum
+Fox_education_Charles,152.7808561530848,Fox,25.075584311937067,909.3,US/Mountain,,,,,Education,College Laboratory
+Fox_office_Gaylord,103.04230776219201,Fox,25.075584311937067,13759.0,US/Mountain,,,,,Office,Office
+Fox_office_Margarita,76.33828046439345,Fox,25.075584311937067,2187.8,US/Mountain,1941.0,,,,Office,Office
+Fox_lodging_Frances,84.04282602388666,Fox,25.075584311937067,10340.5,US/Mountain,1964.0,,,,Lodging/residential,Dormitory
+Fox_office_Demetrius,74.38011950937891,Fox,25.075584311937067,14463.3,US/Mountain,,,,,Office,Office
+Fox_office_Berniece,112.46710035891773,Fox,25.075584311937067,2173.2,US/Mountain,,,,,Office,Office
+Fox_office_Susanne,164.61349830076466,Fox,25.075584311937067,941.6,US/Mountain,,,,,Office,Office
+Fox_office_Alice,168.24599094476466,Fox,25.075584311937067,18806.8,US/Mountain,1967.0,,,,Office,Office
+Fox_education_Leota,153.96321590733717,Fox,25.075584311937067,12311.3,US/Mountain,1992.0,,,,Education,College Laboratory
+Fox_assembly_Adrianne,95.51740269636028,Fox,25.075584311937067,21391.8,US/Mountain,1975.0,,,,Entertainment/public assembly,Sports Stadium
+Fox_office_Molly,109.63013187575916,Fox,25.075584311937067,576.3,US/Mountain,1999.0,,,,Office,Office
+Fox_education_Dewayne,76.47060467365391,Fox,25.075584311937067,8892.4,US/Mountain,,,,,Education,College Classroom
+Fox_assembly_Johnnie,124.26111202653316,Fox,25.075584311937067,23668.5,US/Mountain,1989.0,,,,Entertainment/public assembly,Fitness Center
+Fox_education_Lesley,75.55895956544099,Fox,25.075584311937067,1555.6,US/Mountain,,,,,Education,Primary/Secondary Classroom
+Fox_education_John,107.829214346433,Fox,25.075584311937067,4587.9,US/Mountain,1967.0,,,,Education,College Laboratory
+Fox_education_Marcelina,90.70832085828343,Fox,25.075584311937067,400.8,US/Mountain,1907.0,,,,Education,College Classroom
+Fox_education_Elvira,120.06889225194732,Fox,25.075584311937067,13826.7,US/Mountain,2014.0,,,,Education,Student Union
+Fox_lodging_Isabell,84.48560063297742,Fox,25.075584311937067,2875.3,US/Mountain,1951.0,,,,Lodging/residential,Dormitory
+Fox_education_Ollie,141.34292154960067,Fox,25.075584311937067,6698.5,US/Mountain,1970.0,,,,Education,College Classroom
+Fox_education_Elois,141.59029136690648,Fox,25.075584311937067,695.0,US/Mountain,1969.0,,,,Education,College Classroom
+Fox_education_Melinda,188.325660667067,Fox,25.075584311937067,18984.6,US/Mountain,1993.0,,,,Education,College Laboratory
+Fox_education_Geoffrey,82.73253707369182,Fox,25.075584311937067,12731.4,US/Mountain,1957.0,,,,Education,College Laboratory
+Fox_public_Bart,123.1305785277704,Fox,25.075584311937067,9407.5,US/Mountain,1982.0,,,,Public services,Library
+Fox_education_Tamika,158.5741333828943,Fox,25.075584311937067,8339.9,US/Mountain,,,,,Education,College Laboratory
+Fox_education_Janina,131.10165192523144,Fox,25.075584311937067,8479.5,US/Mountain,1951.0,,,,Education,College Laboratory
+Fox_office_Karima,129.47308888703938,Fox,25.075584311937067,4806.1,US/Mountain,1966.0,,,,Office,Office
+Fox_assembly_Lakeisha,172.46047048997772,Fox,25.075584311937067,898.0,US/Mountain,2005.0,,,,Entertainment/public assembly,Fitness Center
+Fox_office_Zachary,113.05024945354144,Fox,25.075584311937067,13038.5,US/Mountain,,,,,Office,Office
+Fox_education_Nilda,114.9359678725702,Fox,25.075584311937067,10371.2,US/Mountain,1989.0,,,,Education,College Classroom
+Fox_health_Lorena,107.55253974041126,Fox,25.075584311937067,3428.5,US/Mountain,1934.0,,,,Healthcare,Health Services
+Fox_education_Miguelina,105.50161044217731,Fox,25.075584311937067,7831.7,US/Mountain,,,,,Education,College Classroom
+Fox_education_Long,101.32307283036351,Fox,25.075584311937067,12733.7,US/Mountain,1964.0,,,,Education,College Classroom
+Fox_lodging_Jina,125.8701082559715,Fox,25.075584311937067,9888.6,US/Mountain,1963.0,,,,Lodging/residential,Dormitory
+Fox_education_Kim,87.24782215803947,Fox,25.075584311937067,5782.1,US/Mountain,1970.0,,,,Education,College Classroom
+Fox_assembly_Kathie,75.0643409927724,Fox,25.075584311937067,1466.6,US/Mountain,,,,,Entertainment/public assembly,Museum
+Fox_office_Easter,72.96676034700884,Fox,25.075584311937067,2766.5,US/Mountain,,,,,Office,Office
+Fox_education_Tonya,176.50795539319589,Fox,25.075584311937067,8444.9,US/Mountain,,,,,Education,College Classroom
+Fox_assembly_Christie,183.7189925784776,Fox,25.075584311937067,997.1,US/Mountain,2005.0,,,,Entertainment/public assembly,Fitness Center
+Fox_assembly_Audrey,103.31438492063494,Fox,25.075584311937067,1108.8,US/Mountain,1939.0,,,,Entertainment/public assembly,Theater
+Fox_education_Suzan,78.86210001096612,Fox,25.075584311937067,4559.5,US/Mountain,1914.0,,,,Education,College Classroom
+Fox_assembly_Cindy,115.33183375381756,Fox,25.075584311937067,3765.5,US/Mountain,,,,,Entertainment/public assembly,Sports Stadium
+Fox_education_Shirley,107.65316065737294,Fox,25.075584311937067,8220.6,US/Mountain,,,,,Education,College Classroom
+Fox_lodging_Winifred,132.11129751710797,Fox,25.075584311937067,5582.2,US/Mountain,2001.0,,,,Lodging/residential,Dormitory
+Fox_assembly_Sheldon,180.76978853529593,Fox,25.075584311937067,4823.5,US/Mountain,,,,,Entertainment/public assembly,Fitness Center
+Fox_education_Dominique,181.04391894918365,Fox,25.075584311937067,8930.2,US/Mountain,1959.0,,,,Education,College Laboratory
+Fox_assembly_Cecelia,92.23418101281729,Fox,25.075584311937067,1591.6,US/Mountain,1918.0,,,,Entertainment/public assembly,Museum
+Fox_office_Sheila,90.66717883292655,Fox,25.075584311937067,901.4,US/Mountain,1940.0,,,,Office,Office
+Fox_education_Rudolph,87.99660672232928,Fox,25.075584311937067,2335.5,US/Mountain,1970.0,,,,Education,College Classroom
+Fox_office_Thelma,98.7222379052324,Fox,25.075584311937067,11052.3,US/Mountain,1988.0,,,,Office,Office
+Fox_education_Leona,90.48822047438799,Fox,25.075584311937067,26286.5,US/Mountain,2003.0,,,,Education,College Classroom
+Fox_education_Kendrick,103.77223752969121,Fox,25.075584311937067,1052.5,US/Mountain,,,,,Education,Auditorium
+Fox_public_Lauren,115.57761487303507,Fox,25.075584311937067,9262.4,US/Mountain,,,,,Public services,Library
+Fox_education_Heriberto,102.5548825048825,Fox,25.075584311937067,3174.6,US/Mountain,,,,,Education,College Classroom
+Fox_assembly_Leeanne,82.73012080918875,Fox,25.075584311937067,1932.8,US/Mountain,1999.0,,,,Entertainment/public assembly,Sports Stadium
+Fox_assembly_Tony,99.37523610669396,Fox,25.075584311937067,7231.9,US/Mountain,,,,,Entertainment/public assembly,Fitness Center
+Fox_education_Carleen,139.64966956534846,Fox,25.075584311937067,6635.2,US/Mountain,,,,,Education,College Laboratory
+Fox_office_Rowena,103.24214399744572,Fox,25.075584311937067,3132.0,US/Mountain,1956.0,,,,Office,Office
+Fox_education_Rosie,133.91132744043952,Fox,25.075584311937067,8445.2,US/Mountain,,,,,Education,College Classroom
+Fox_education_Shawanda,104.48325955629622,Fox,25.075584311937067,960.1,US/Mountain,,,,,Education,Primary/Secondary Classroom
+Fox_education_Virgil,128.34937734770537,Fox,25.075584311937067,6123.0,US/Mountain,1964.0,,,,Education,College Laboratory
+Fox_public_Rhonda,98.98174918372472,Fox,25.075584311937067,9555.6,US/Mountain,,,,,Public services,Library
+Fox_assembly_Terrell,89.48241114492123,Fox,25.075584311937067,4830.9,US/Mountain,1974.0,,,,Entertainment/public assembly,Sports Stadium
+Fox_education_Delma,88.23193432445679,Fox,25.075584311937067,9181.5,US/Mountain,1968.0,,,,Education,College Classroom
+Fox_office_Edythe,127.90602588680314,Fox,25.075584311937067,7772.3,US/Mountain,1973.0,,,,Office,Office
+Fox_assembly_Carlos,146.9479815563077,Fox,25.075584311937067,6706.9,US/Mountain,2013.0,,,,Entertainment/public assembly,Fitness Center
+Fox_office_Yong,77.8472167696277,Fox,25.075584311937067,15232.3,US/Mountain,2004.0,,,,Office,Office
+Rat_public_Emilee,160.40966368463856,Rat,15.661432726857926,2090.3,US/Eastern,,,,,Public services,Library
+Rat_public_Nell,89.45305611643951,Rat,15.661432726857926,4754.4,US/Eastern,,,,,Public services,Police Station
+Rat_education_Adrian,114.64555218843913,Rat,15.661432726857926,5956.3,US/Eastern,1924.0,,,,Education,K-12 School
+Rat_assembly_Suzanne,150.0693911135491,Rat,15.661432726857926,182.3,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_education_Lee,134.5281028088926,Rat,15.661432726857926,26291.5,US/Eastern,2014.0,,,,Education,K-12 School
+Rat_public_Frederick,136.3573896974777,Rat,15.661432726857926,1312.3,US/Eastern,,,,,Public services,Police Station
+Rat_education_Kathryn,150.64784558940346,Rat,15.661432726857926,30213.6,US/Eastern,2006.0,,,,Education,K-12 School
+Rat_public_Leta,158.31816350334003,Rat,15.661432726857926,943.1,US/Eastern,1966.0,,,,Public services,Fire Station
+Rat_education_Keith,97.67200516963186,Rat,15.661432726857926,9420.4,US/Eastern,1930.0,,,,Education,K-12 School
+Rat_education_Morton,91.60122073938359,Rat,15.661432726857926,14409.3,US/Eastern,1931.0,,,,Education,K-12 School
+Rat_education_Davis,85.03409793018227,Rat,15.661432726857926,8092.5,US/Eastern,,,,,Education,K-12 School
+Rat_public_Kelly,188.0997532057806,Rat,15.661432726857926,982.6,US/Eastern,1969.0,,,,Public services,Fire Station
+Rat_education_Verna,117.86213695796226,Rat,15.661432726857926,6187.3,US/Eastern,1970.0,,,,Education,K-12 School
+Rat_assembly_Michel,182.18818373071528,Rat,15.661432726857926,713.0,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_public_Toya,150.93645846706895,Rat,15.661432726857926,1557.8,US/Eastern,1980.0,,,,Public services,Social/Meeting Hall
+Rat_education_Carmela,169.40614470939235,Rat,15.661432726857926,4457.9,US/Eastern,2002.0,,,,Education,K-12 School
+Rat_public_Sharron,132.99728976697062,Rat,15.661432726857926,2862.3,US/Eastern,,,,,Public services,Other - Public Services
+Rat_public_Kelle,117.14732778461702,Rat,15.661432726857926,1868.3,US/Eastern,1936.0,,,,Public services,Library
+Rat_office_Adele,138.71468661949535,Rat,15.661432726857926,37904.4,US/Eastern,2010.0,,,,Office,Office
+Rat_public_Bronwyn,75.58329355978731,Rat,15.661432726857926,51583.7,US/Eastern,1941.0,,,,Public services,Other - Public Services
+Rat_education_Lincoln,130.03540933706645,Rat,15.661432726857926,10857.8,US/Eastern,1931.0,,,,Education,K-12 School
+Rat_education_Alfred,162.93877067635938,Rat,15.661432726857926,19230.9,US/Eastern,1935.0,,,,Education,K-12 School
+Rat_assembly_Jennie,118.19604166666666,Rat,15.661432726857926,192.0,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_education_Leonardo,98.2347867730901,Rat,15.661432726857926,4385.0,US/Eastern,1935.0,,,,Education,K-12 School
+Rat_assembly_Pauline,171.9068888888889,Rat,15.661432726857926,90.0,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_public_Laurie,110.72284985071751,Rat,15.661432726857926,12459.6,US/Eastern,,,,,Public services,Other - Public Services
+Rat_public_Sade,142.21858648527433,Rat,15.661432726857926,2006.7,US/Eastern,,,,,Public services,Fire Station
+Rat_public_Damon,148.44834554334554,Rat,15.661432726857926,1228.5,US/Eastern,1965.0,,,,Public services,Fire Station
+Rat_warehouse_Doretta,132.00177691800016,Rat,15.661432726857926,10454.9,US/Eastern,,,,,Warehouse/storage,Non-Refrigerated Warehouse
+Rat_health_Mildred,173.0415789185039,Rat,15.661432726857926,911.7,US/Eastern,2010.0,,,,Healthcare,Senior Care Community
+Rat_education_Lynn,119.80314920426959,Rat,15.661432726857926,7785.3,US/Eastern,,,,,Education,K-12 School
+Rat_other_Lan,119.04873974794958,Rat,15.661432726857926,999.8,US/Eastern,,,,,Other,Other
+Rat_education_Marvin,85.20704778559004,Rat,15.661432726857926,5518.4,US/Eastern,1900.0,,,,Education,K-12 School
+Rat_education_Beverly,158.5143905140996,Rat,15.661432726857926,36603.8,US/Eastern,2013.0,,,,Education,K-12 School
+Rat_assembly_Ida,167.02503626078757,Rat,15.661432726857926,1378.9,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_health_Gaye,149.75777457558428,Rat,15.661432726857926,2220.7,US/Eastern,,,,,Healthcare,Other/Specialty Hospital
+Rat_education_Irma,96.57831236230834,Rat,15.661432726857926,6763.3,US/Eastern,1959.0,,,,Education,K-12 School
+Rat_office_Olivia,180.62328984828986,Rat,15.661432726857926,2564.1,US/Eastern,,,,,Office,Office
+Rat_assembly_Teodoro,138.30105306345732,Rat,15.661432726857926,1645.2,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_education_Earnest,95.23090127405705,Rat,15.661432726857926,5564.9,US/Eastern,1962.0,,,,Education,K-12 School
+Rat_warehouse_Shari,157.0248670160369,Rat,15.661432726857926,2537.9,US/Eastern,,,,,Warehouse/storage,Non-Refrigerated Warehouse
+Rat_public_Fredrick,96.85535714285716,Rat,15.661432726857926,1202.6,US/Eastern,1960.0,,,,Public services,Fire Station
+Rat_education_Wilmer,145.72281836363047,Rat,15.661432726857926,6150.2,US/Eastern,1950.0,,,,Education,K-12 School
+Rat_public_Helena,178.4208329816862,Rat,15.661432726857926,1184.9,US/Eastern,1968.0,,,,Public services,Other - Public Services
+Rat_education_Marianna,118.01006485302788,Rat,15.661432726857926,5936.5,US/Eastern,1921.0,,,,Education,K-12 School
+Rat_public_Sharonda,144.20898474416094,Rat,15.661432726857926,2222.1,US/Eastern,,,,,Public services,Fire Station
+Rat_public_Allie,124.84045269520166,Rat,15.661432726857926,810.7,US/Eastern,,,,,Public services,Library
+Rat_education_Dana,130.24800950209047,Rat,15.661432726857926,6577.5,US/Eastern,1964.0,,,,Education,K-12 School
+Rat_public_Leo,130.46798890714874,Rat,15.661432726857926,1217.0,US/Eastern,1929.0,,,,Public services,Fire Station
+Rat_assembly_Trudy,172.50598832055894,Rat,15.661432726857926,1917.9,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_health_Tanya,166.2518215339233,Rat,15.661432726857926,2712.0,US/Eastern,2014.0,,,,Healthcare,Urgent Care Center/Clinic/Other Outpatient Office
+Rat_public_Ramona,174.90732077989472,Rat,15.661432726857926,1348.9,US/Eastern,1908.0,,,,Public services,Fire Station
+Rat_education_Debra,193.44969537046714,Rat,15.661432726857926,4784.5,US/Eastern,1931.0,,,,Education,K-12 School
+Rat_public_Julieann,95.8135861469712,Rat,15.661432726857926,402.8,US/Eastern,,,,,Public services,Social/Meeting Hall
+Rat_lodging_Marguerite,116.78124926634582,Rat,15.661432726857926,1703.8,US/Eastern,1900.0,,,,Lodging/residential,Other - Lodging/Residential
+Rat_lodging_Ardell,96.17115730181766,Rat,15.661432726857926,1446.9,US/Eastern,,,,,Lodging/residential,Other - Lodging/Residential
+Rat_public_Laura,97.50773955255382,Rat,15.661432726857926,1184.5,US/Eastern,,,,,Public services,Other - Public Services
+Rat_public_Courtney,161.61643800660462,Rat,15.661432726857926,1665.5,US/Eastern,,,,,Public services,Library
+Rat_education_Liz,123.95128615742536,Rat,15.661432726857926,6447.5,US/Eastern,1911.0,,,,Education,K-12 School
+Rat_education_Jacob,91.83775231603525,Rat,15.661432726857926,5310.8,US/Eastern,2014.0,,,,Education,K-12 School
+Rat_education_Zina,81.21154897451365,Rat,15.661432726857926,5304.8,US/Eastern,1960.0,,,,Education,K-12 School
+Rat_lodging_Lorenzo,106.5223009587328,Rat,15.661432726857926,239.9,US/Eastern,,,,,Lodging/residential,Other - Lodging/Residential
+Rat_education_Sherwood,101.92367715136217,Rat,15.661432726857926,8835.1,US/Eastern,1927.0,,,,Education,K-12 School
+Rat_education_Pat,104.10701365365188,Rat,15.661432726857926,13461.6,US/Eastern,,,,,Education,K-12 School
+Rat_assembly_Dovie,141.3743993791335,Rat,15.661432726857926,1481.8,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_education_Renee,87.33234231226959,Rat,15.661432726857926,3445.1,US/Eastern,1908.0,,,,Education,K-12 School
+Rat_education_Patty,76.08029347516383,Rat,15.661432726857926,15793.5,US/Eastern,1956.0,,,,Education,K-12 School
+Rat_public_Jason,73.13448989046626,Rat,15.661432726857926,3021.9,US/Eastern,,,,,Public services,Social/Meeting Hall
+Rat_public_Dexter,160.74553111513296,Rat,15.661432726857926,718.3,US/Eastern,,,,,Public services,Fire Station
+Rat_public_Michael,163.25249879760398,Rat,15.661432726857926,2287.1,US/Eastern,,,,,Public services,Library
+Rat_education_Mona,138.85064278315969,Rat,15.661432726857926,4923.9,US/Eastern,1912.0,,,,Education,K-12 School
+Rat_public_Carole,178.87126421223604,Rat,15.661432726857926,923.5,US/Eastern,1963.0,,,,Public services,Fire Station
+Rat_public_Michelle,185.39016115156542,Rat,15.661432726857926,3254.7,US/Eastern,1962.0,,,,Public services,Other - Public Services
+Rat_education_Winnie,88.00006409207441,Rat,15.661432726857926,5499.9,US/Eastern,1959.0,,,,Education,Other - Education
+Rat_education_Everett,193.76495139884105,Rat,15.661432726857926,8024.5,US/Eastern,1903.0,,,,Education,K-12 School
+Rat_public_Neil,161.697172978274,Rat,15.661432726857926,1325.6,US/Eastern,,,,,Public services,Social/Meeting Hall
+Rat_education_Adell,134.30879045741648,Rat,15.661432726857926,9689.2,US/Eastern,1976.0,,,,Education,K-12 School
+Rat_public_Sue,144.4542558916837,Rat,15.661432726857926,1765.2,US/Eastern,,,,,Public services,Library
+Rat_education_Theo,181.75577768128687,Rat,15.661432726857926,26830.4,US/Eastern,1923.0,,,,Education,K-12 School
+Rat_office_Sammy,161.69533154768035,Rat,15.661432726857926,2912.1,US/Eastern,,,,,Office,Office
+Rat_education_Nydia,171.4768432173455,Rat,15.661432726857926,7785.3,US/Eastern,1944.0,,,,Education,K-12 School
+Rat_public_Darren,146.2076871657754,Rat,15.661432726857926,261.8,US/Eastern,,,,,Public services,Fire Station
+Rat_health_Guy,168.84160769727822,Rat,15.661432726857926,76141.2,US/Eastern,1922.0,,,,Healthcare,Hospital (General Medical & Surgical)
+Rat_education_Rosalyn,103.86415039660855,Rat,15.661432726857926,6038.7,US/Eastern,,,,,Education,K-12 School
+Rat_office_Arron,140.41577392965743,Rat,15.661432726857926,3716.1,US/Eastern,,,,,Office,Office
+Rat_public_Corinne,96.5924361748161,Rat,15.661432726857926,2311.0,US/Eastern,1984.0,,,,Public services,Fire Station
+Rat_education_Jame,161.79356223481506,Rat,15.661432726857926,3511.7,US/Eastern,,,,,Education,K-12 School
+Rat_lodging_Jeannette,97.80912809472551,Rat,15.661432726857926,464.5,US/Eastern,2010.0,,,,Lodging/residential,Other - Lodging/Residential
+Rat_lodging_Ted,118.89391819160386,Rat,15.661432726857926,185.8,US/Eastern,,,,,Lodging/residential,Other - Lodging/Residential
+Rat_education_Elisa,86.6779356913988,Rat,15.661432726857926,3994.8,US/Eastern,1923.0,,,,Education,K-12 School
+Rat_education_Cecil,96.17325121895408,Rat,15.661432726857926,5681.1,US/Eastern,,,,,Education,K-12 School
+Rat_public_Faye,159.97524964961457,Rat,15.661432726857926,1712.4,US/Eastern,1973.0,,,,Public services,Fire Station
+Rat_education_Cedric,132.4710978911024,Rat,15.661432726857926,6169.1,US/Eastern,,,,,Education,K-12 School
+Rat_education_Salvatore,151.028844168113,Rat,15.661432726857926,4551.7,US/Eastern,2015.0,,,,Education,K-12 School
+Rat_lodging_Ben,88.77339140730716,Rat,15.661432726857926,32516.0,US/Eastern,1949.0,,,,Lodging/residential,Other - Lodging/Residential
+Rat_public_Tammara,142.97640983606559,Rat,15.661432726857926,457.5,US/Eastern,,,,,Public services,Library
+Rat_office_Tracy,141.66383879567192,Rat,15.661432726857926,1275.4,US/Eastern,,,,,Office,Office
+Rat_education_Fernando,99.90406746213021,Rat,15.661432726857926,5472.7,US/Eastern,1910.0,,,,Education,K-12 School
+Rat_education_Shellie,113.56261637766933,Rat,15.661432726857926,5778.6,US/Eastern,,,,,Education,K-12 School
+Rat_education_Bryant,75.70227806990411,Rat,15.661432726857926,6466.0,US/Eastern,1949.0,,,,Education,K-12 School
+Rat_office_Randy,155.93885014708428,Rat,15.661432726857926,5779.0,US/Eastern,,,,,Office,Office
+Rat_warehouse_Breanna,166.1697063055173,Rat,15.661432726857926,4795.8,US/Eastern,1975.0,,,,Warehouse/storage,Non-Refrigerated Warehouse
+Rat_education_Milagros,103.05966137286232,Rat,15.661432726857926,9262.4,US/Eastern,1955.0,,,,Education,K-12 School
+Rat_education_Zoe,127.27757192710354,Rat,15.661432726857926,6447.5,US/Eastern,1959.0,,,,Education,K-12 School
+Rat_education_Dreama,82.81256083376695,Rat,15.661432726857926,9801.3,US/Eastern,,,,,Education,K-12 School
+Rat_assembly_Pam,144.11526162790696,Rat,15.661432726857926,516.0,US/Eastern,,,,,Entertainment/public assembly,Swimming Pool
+Rat_education_Tim,123.65950225475314,Rat,15.661432726857926,4412.9,US/Eastern,1968.0,,,,Education,K-12 School
+Rat_education_Royal,88.59335155016208,Rat,15.661432726857926,7218.6,US/Eastern,,,,,Education,K-12 School
+Rat_education_Humberto,163.462318044789,Rat,15.661432726857926,9288.0,US/Eastern,1968.0,,,,Education,K-12 School
+Rat_public_Lloyd,125.32138469655943,Rat,15.661432726857926,5022.4,US/Eastern,2006.0,,,,Public services,Social/Meeting Hall
+Rat_education_Rogelio,189.52305375109268,Rat,15.661432726857926,5834.3,US/Eastern,2014.0,,,,Education,K-12 School
+Rat_public_Grover,136.01767829050863,Rat,15.661432726857926,1144.2,US/Eastern,,,,,Public services,Police Station
+Rat_education_Kelsey,150.01044610733018,Rat,15.661432726857926,9227.6,US/Eastern,1927.0,,,,Education,K-12 School
+Rat_public_Tommy,172.11856551160892,Rat,15.661432726857926,857.1,US/Eastern,,,,,Public services,Police Station
+Rat_public_Fern,130.57312996334758,Rat,15.661432726857926,3274.0,US/Eastern,1978.0,,,,Public services,Fire Station
+Rat_education_Vicky,90.83945450051654,Rat,15.661432726857926,18004.6,US/Eastern,,,,,Education,K-12 School
+Rat_public_Roberta,129.5165156915157,Rat,15.661432726857926,1010.1,US/Eastern,,,,,Public services,Fire Station
+Rat_education_Robyn,148.1694863464699,Rat,15.661432726857926,9188.1,US/Eastern,1961.0,,,,Education,K-12 School
+Rat_office_Lora,176.24090367477015,Rat,15.661432726857926,21274.8,US/Eastern,2010.0,,,,Office,Office
+Rat_education_Paula,150.7145517361111,Rat,15.661432726857926,7200.0,US/Eastern,1942.0,,,,Education,K-12 School
+Rat_education_Meghan,103.04218678066425,Rat,15.661432726857926,4561.5,US/Eastern,1911.0,,,,Education,K-12 School
+Rat_public_Frank,165.50994478383458,Rat,15.661432726857926,425.6,US/Eastern,,,,,Public services,Other - Public Services
+Rat_public_Deidre,119.79068724342406,Rat,15.661432726857926,657.7,US/Eastern,,,,,Public services,Fire Station
+Rat_assembly_Viola,139.99138662919685,Rat,15.661432726857926,3380.5,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_public_Laverne,100.89800216469737,Rat,15.661432726857926,1108.7,US/Eastern,1930.0,,,,Public services,Fire Station
+Rat_office_Jill,178.35829225630795,Rat,15.661432726857926,31587.0,US/Eastern,2010.0,,,,Office,Office
+Rat_public_Margart,182.3192744263418,Rat,15.661432726857926,2043.9,US/Eastern,,,,,Public services,Library
+Rat_education_Nellie,145.51422377294296,Rat,15.661432726857926,26217.2,US/Eastern,1928.0,,,,Education,K-12 School
+Rat_education_Deanna,124.60698891427467,Rat,15.661432726857926,6215.2,US/Eastern,1969.0,,,,Education,K-12 School
+Rat_education_Sina,179.21771817439324,Rat,15.661432726857926,8203.3,US/Eastern,1909.0,,,,Education,K-12 School
+Rat_office_Avis,179.68762035365722,Rat,15.661432726857926,44099.2,US/Eastern,1986.0,,,,Office,Office
+Rat_public_Shanta,92.50948097779309,Rat,15.661432726857926,1161.8,US/Eastern,,,,,Public services,Fire Station
+Rat_assembly_Mirta,184.97984295320467,Rat,15.661432726857926,8000.8,US/Eastern,1926.0,,,,Entertainment/public assembly,Other - Recreation
+Rat_lodging_Dwight,147.45213597654615,Rat,15.661432726857926,1432.6,US/Eastern,,,,,Lodging/residential,Other - Lodging/Residential
+Rat_public_Josiah,180.6930998783398,Rat,15.661432726857926,4274.2,US/Eastern,1950.0,,,,Public services,Police Station
+Rat_assembly_Monica,135.64803792981212,Rat,15.661432726857926,4231.5,US/Eastern,,,,,Entertainment/public assembly,Other - Recreation
+Rat_public_Ramon,131.13117447037527,Rat,15.661432726857926,2043.9,US/Eastern,,,,,Public services,Other - Public Services
+Rat_education_Esther,128.49122757500774,Rat,15.661432726857926,6466.0,US/Eastern,1908.0,,,,Education,K-12 School
+Rat_education_Guillermo,128.9362558073578,Rat,15.661432726857926,7404.4,US/Eastern,1932.0,,,,Education,K-12 School
+Rat_education_Dann,100.87645165380896,Rat,15.661432726857926,16954.8,US/Eastern,1970.0,,,,Education,K-12 School
+Rat_public_Angelina,159.36853962327237,Rat,15.661432726857926,1794.4,US/Eastern,,,,,Public services,Fire Station
+Rat_public_Desiree,135.1309389476185,Rat,15.661432726857926,841.9,US/Eastern,,,,,Public services,Fire Station
+Rat_education_Lonnie,114.1029374407991,Rat,15.661432726857926,4645.2,US/Eastern,1928.0,,,,Education,K-12 School
+Rat_office_Loyd,174.6132326485086,Rat,15.661432726857926,2779.3,US/Eastern,2002.0,,,,Office,Office
+Rat_education_Tania,124.00508446239958,Rat,15.661432726857926,21832.2,US/Eastern,2013.0,,,,Education,K-12 School
+Rat_lodging_Christine,187.77607008911676,Rat,15.661432726857926,2906.3,US/Eastern,1935.0,,,,Lodging/residential,Other - Lodging/Residential
+Bear_public_Orville,121.03764314814816,Bear,15.1027590924638,2700.0,US/Pacific,2004.0,3.0,,,Public services,Public services
+Bear_science_Alison,183.5390209175833,Bear,15.1027590924638,4945.6,US/Pacific,1942.0,5.0,,,Technology/science,Technology/science
+Bear_education_Thuy,80.54575320035666,Bear,15.1027590924638,25122.2,US/Pacific,1971.0,14.0,,,Education,Education
+Bear_lodging_Evan,89.46944409668946,Bear,15.1027590924638,17205.6,US/Pacific,1930.0,8.0,,,Lodging/residential,Lodging/residential
+Bear_education_Iris,73.15666201777697,Bear,15.1027590924638,5456.5,US/Pacific,1923.0,6.0,,,Education,Education
+Bear_education_Curtis,147.4800967877503,Bear,15.1027590924638,4104.6,US/Pacific,1917.0,5.0,,,Education,Education
+Bear_education_Gavin,110.2561178268097,Bear,15.1027590924638,7158.6,US/Pacific,1917.0,4.0,,,Education,Education
+Bear_education_Paola,102.38045959023948,Bear,15.1027590924638,12802.6,US/Pacific,1967.0,8.0,,,Education,Education
+Bear_education_Marta,82.6414169491145,Bear,15.1027590924638,4455.1,US/Pacific,1980.0,3.0,,,Education,Education
+Bear_education_Danna,93.47520143789971,Bear,15.1027590924638,9663.4,US/Pacific,1960.0,4.0,,,Education,Education
+Bear_education_Lila,163.83192339274984,Bear,15.1027590924638,11483.9,US/Pacific,1961.0,7.0,,,Education,Education
+Bear_education_Sharon,187.07790466009084,Bear,15.1027590924638,5261.7,US/Pacific,1953.0,5.0,,,Education,Education
+Bear_assembly_Genia,95.2345636386311,Bear,15.1027590924638,24256.1,US/Pacific,1923.0,3.0,,,Entertainment/public assembly,Entertainment/public assembly
+Bear_education_Pattie,188.90369069700856,Bear,15.1027590924638,8032.9,US/Pacific,2014.0,7.0,,,Education,Education
+Bear_science_Eleanor,103.43107216110083,Bear,15.1027590924638,3081.3,US/Pacific,1963.0,4.0,,,Technology/science,Technology/science
+Bear_education_Marsha,74.91061199986414,Bear,15.1027590924638,10304.7,US/Pacific,1941.0,6.0,,,Education,Education
+Bear_education_Clint,129.82629858468437,Bear,15.1027590924638,3836.6,US/Pacific,1959.0,6.0,,,Education,Education
+Bear_education_Owen,73.3854341063569,Bear,15.1027590924638,17949.0,US/Pacific,1964.0,10.0,,,Education,Education
+Bear_education_Katy,79.3371952139959,Bear,15.1027590924638,13752.6,US/Pacific,1924.0,5.0,,,Education,Education
+Bear_education_Laurette,109.62551457322155,Bear,15.1027590924638,4079.4,US/Pacific,1912.0,5.0,,,Education,Education
+Bear_education_Leonel,149.12970244244445,Bear,15.1027590924638,6988.9,US/Pacific,1993.0,4.0,,,Education,Education
+Bear_public_Lowell,146.50866999463406,Bear,15.1027590924638,12299.8,US/Pacific,1949.0,7.0,,,Public services,Public services
+Bear_education_Austin,91.30803093925371,Bear,15.1027590924638,2031.4,US/Pacific,1911.0,4.0,,,Education,Education
+Bear_assembly_Roxy,135.53072654767283,Bear,15.1027590924638,1106.5,US/Pacific,1903.0,2.0,,,Entertainment/public assembly,Entertainment/public assembly
+Bear_public_Valorie,96.90690433964836,Bear,15.1027590924638,17598.2,US/Pacific,1994.0,4.0,,,Public services,Public services
+Bear_assembly_Beatrice,134.51335385438972,Bear,15.1027590924638,2802.0,US/Pacific,1958.0,4.0,,,Entertainment/public assembly,Entertainment/public assembly
+Lamb_health_Ken,83.91580116550116,Lamb,11.000171448165505,1716.0,Europe/London,1966.0,1.0,0.0,G,Healthcare,Creamatorium
+Lamb_other_Katharina,152.12135569029851,Lamb,11.000171448165505,536.0,Europe/London,1976.0,1.0,0.0,,Other,Campsites
+Lamb_office_Stefani,86.6628309501411,Lamb,11.000171448165505,1063.0,Europe/London,1976.0,1.0,,D,Office,Office
+Lamb_industrial_Carla,133.08126291241396,Lamb,11.000171448165505,8426.0,Europe/London,1976.0,2.0,104.0,D,Manufacturing/industrial,Industrial
+Lamb_office_Bertha,81.00032470014992,Lamb,11.000171448165505,5336.0,Europe/London,1976.0,3.0,556.0,F,Office,Office
+Lamb_assembly_Cherie,110.01933851320584,Lamb,11.000171448165505,4392.0,Europe/London,1976.0,2.0,,D,Entertainment/public assembly,Community Center
+Lamb_office_Vasiliki,105.91903730418144,Lamb,11.000171448165505,25087.0,Europe/London,1976.0,5.0,1122.0,F,Office,Office
+Lamb_assembly_Librada,92.78087773080824,Lamb,11.000171448165505,2957.0,Europe/London,1976.0,2.0,,B,Entertainment/public assembly,Sports Stadium
+Lamb_industrial_Venessa,94.52336088435374,Lamb,11.000171448165505,588.0,Europe/London,1919.0,2.0,10.0,,Manufacturing/industrial,Greenhouse
+Lamb_assembly_Tasha,181.13469661399552,Lamb,11.000171448165505,443.0,Europe/London,1976.0,1.0,,,Entertainment/public assembly,Community Center
+Peacock_office_Elton,143.3281590759059,Peacock,15.34629735280694,9694.9,US/Eastern,,,,,Office,Office
+Peacock_lodging_Sergio,80.39925848733091,Peacock,15.34629735280694,10498.0,US/Eastern,,,,,Lodging/residential,Dormitory
+Peacock_lodging_Lou,86.86808640727321,Peacock,15.34629735280694,11895.7,US/Eastern,,,,,Lodging/residential,Dormitory
+Peacock_education_Patience,84.41484497955155,Peacock,15.34629735280694,2836.4,US/Eastern,,,,,Education,College Classroom
+Peacock_education_Anita,80.89307129769777,Peacock,15.34629735280694,1255.3,US/Eastern,,,,,Education,College Classroom
+Peacock_office_Norman,104.93671492395124,Peacock,15.34629735280694,3044.1,US/Eastern,,,,,Office,Office
+Peacock_lodging_Terrie,80.78537089258317,Peacock,15.34629735280694,4367.1,US/Eastern,,,,,Lodging/residential,Dormitory
+Peacock_education_Forest,108.20011517832265,Peacock,15.34629735280694,7178.0,US/Eastern,,,,,Education,College Classroom
+Peacock_lodging_Francesca,101.48147238363386,Peacock,15.34629735280694,3338.6,US/Eastern,,,,,Lodging/residential,Dormitory
+Peacock_lodging_Jamaal,73.22001222158303,Peacock,15.34629735280694,25900.9,US/Eastern,,,,,Lodging/residential,Dormitory
+Peacock_office_Effie,79.0865747642407,Peacock,15.34629735280694,9723.9,US/Eastern,,,,,Office,Office
+Peacock_office_Annie,111.56403888372247,Peacock,15.34629735280694,6021.8,US/Eastern,,,,,Office,Office
+Peacock_education_Yolanda,89.50891664172404,Peacock,15.34629735280694,3675.1,US/Eastern,,,,,Education,College Laboratory
+Peacock_lodging_Wes,144.42305691472583,Peacock,15.34629735280694,9828.3,US/Eastern,,,,,Lodging/residential,Dormitory
+Moose_education_Maria,184.86542770118805,Moose,7.79805456702254,35999.9,US/Eastern,1960.0,6.0,,,Education,College Classroom
+Moose_education_Marlon,77.2902920154762,Moose,7.79805456702254,21000.0,US/Eastern,1965.0,2.0,,,Education,College Classroom
+Moose_education_Rene,111.28362445559067,Moose,7.79805456702254,37999.9,US/Eastern,1970.0,21.0,1800.0,,Education,College Classroom
+Moose_education_Lori,125.64497947678572,Moose,7.79805456702254,14000.0,US/Eastern,1964.0,6.0,500.0,,Education,College Classroom
+Moose_education_Clark,104.43228015039459,Moose,7.79805456702254,70999.9,US/Eastern,1979.0,13.0,2380.0,,Education,College Classroom
+Moose_education_Gladys,144.28667304363685,Moose,7.79805456702254,67999.9,US/Eastern,1969.0,11.0,,,Education,College Classroom
+Moose_education_Ricardo,193.54238018571428,Moose,7.79805456702254,14000.0,US/Eastern,,5.0,,,Education,College Classroom
+Gator_other_Cassandra,81.38969857465534,Gator,22.80509092982156,2567.8,US/Eastern,,1.0,100.0,,Other,Other
+Gator_public_Cheri,161.28590097333895,Gator,22.80509092982156,945.2,US/Eastern,,1.0,4.0,,Public services,"Fire Station, Fire Stations"
+Gator_assembly_Virgie,76.70338255033556,Gator,22.80509092982156,44.7,US/Eastern,,1.0,100.0,,Entertainment/public assembly,Park
+Gator_other_Elfriede,164.38484503132386,Gator,22.80509092982156,2665.7,US/Eastern,,2.0,100.0,,Other,Other
+Gator_assembly_Kimberly,155.5859428786531,Gator,22.80509092982156,81290.1,US/Eastern,,1.0,100.0,,Entertainment/public assembly,Sports Facility
+Gator_assembly_Enid,138.16735774309723,Gator,22.80509092982156,499.8,US/Eastern,,1.0,100.0,,Entertainment/public assembly,Park
+Gator_other_Gertrude,86.66348694187026,Gator,22.80509092982156,237.4,US/Eastern,,1.0,100.0,,Other,Other
+Gator_warehouse_Constance,90.20548088559835,Gator,22.80509092982156,1404.7,US/Eastern,,1.0,100.0,,Warehouse/storage,Non-Refrigerated Warehouse
+Bull_office_Anne,121.16677785190127,Bull,21.58685985368084,1499.0,US/Central,,,,,Office,Office
+Bull_education_Magaret,79.25275940964976,Bull,21.58685985368084,7954.6,US/Central,,,,,Education,College Classroom
+Bull_office_Myron,99.89199548637853,Bull,21.58685985368084,5583.1,US/Central,,,,,Office,Office
+Bull_education_Myra,76.56354590682949,Bull,21.58685985368084,5527.5,US/Central,,,,,Education,College Classroom
+Bull_education_Dakota,135.6090521208065,Bull,21.58685985368084,3585.9,US/Central,,,,,Education,College Classroom
+Bull_education_Dan,129.92144974626092,Bull,21.58685985368084,11941.4,US/Central,,,,,Education,College Laboratory
+Bull_education_Luke,170.41992806593095,Bull,21.58685985368084,15458.6,US/Central,,,,,Education,Student Union
+Bull_lodging_Melissa,78.64229627433258,Bull,21.58685985368084,27992.3,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Juan,73.54509056644082,Bull,21.58685985368084,26212.8,US/Central,,,,,Education,College Classroom
+Bull_lodging_Charlotte,124.47649873434585,Bull,21.58685985368084,750.6,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Clarita,176.33013857435566,Bull,21.58685985368084,18546.0,US/Central,,,,,Education,College Laboratory
+Bull_lodging_Caren,75.36200150215633,Bull,21.58685985368084,16509.6,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Kristal,189.52942424483518,Bull,21.58685985368084,18853.5,US/Central,,,,,Education,College Laboratory
+Bull_assembly_Amalia,94.5864072016343,Bull,21.58685985368084,52377.0,US/Central,,,,,Entertainment/public assembly,Sports Stadium
+Bull_education_Arthur,160.99752300391248,Bull,21.58685985368084,22083.2,US/Central,,,,,Education,College Classroom
+Bull_education_Roland,102.17849011294508,Bull,21.58685985368084,20071.7,US/Central,,,,,Education,College Classroom
+Bull_education_Summer,78.17383313386904,Bull,21.58685985368084,3509.4,US/Central,,,,,Education,College Classroom
+Bull_lodging_Allen,109.58181811497327,Bull,21.58685985368084,748.0,US/Central,,,,,Lodging/residential,Dormitory
+Bull_lodging_Lettie,81.62241407395341,Bull,21.58685985368084,3683.4,US/Central,,,,,Lodging/residential,Dormitory
+Bull_lodging_Travis,121.9728192380812,Bull,21.58685985368084,69275.1,US/Central,,,,,Lodging/residential,Dormitory
+Bull_lodging_Leonard,78.43921282037897,Bull,21.58685985368084,3831.4,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Reina,74.5405572985119,Bull,21.58685985368084,9434.8,US/Central,,,,,Education,College Classroom
+Bull_assembly_Freddie,89.95393162628234,Bull,21.58685985368084,21815.4,US/Central,,,,,Entertainment/public assembly,Theater
+Bull_education_Genie,80.05824156539289,Bull,21.58685985368084,13675.8,US/Central,,,,,Education,College Classroom
+Bull_education_Lydia,91.41465819737213,Bull,21.58685985368084,11712.9,US/Central,,,,,Education,College Classroom
+Bull_education_Mario,107.2588112482012,Bull,21.58685985368084,8477.8,US/Central,,,,,Education,College Classroom
+Bull_public_Hyun,85.69185026980873,Bull,21.58685985368084,45791.7,US/Central,,,,,Public services,Library
+Bull_assembly_Brandon,163.11025096012173,Bull,21.58685985368084,4140.1,US/Central,,,,,Entertainment/public assembly,Sports Stadium
+Bull_lodging_Dave,132.1041691589903,Bull,21.58685985368084,21733.4,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Linnie,119.67896833717761,Bull,21.58685985368084,14307.0,US/Central,,,,,Education,Student Union
+Bull_education_Miranda,146.32408776627634,Bull,21.58685985368084,10008.4,US/Central,,,,,Education,College Classroom
+Bull_lodging_Carie,130.91923442378172,Bull,21.58685985368084,3683.5,US/Central,,,,,Lodging/residential,Dormitory
+Bull_lodging_Graciela,110.18778610070744,Bull,21.58685985368084,961.2,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Racheal,140.77566117160512,Bull,21.58685985368084,36560.1,US/Central,,,,,Education,College Laboratory
+Bull_lodging_Xavier,109.32509992006396,Bull,21.58685985368084,750.6,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Geneva,115.3612498923249,Bull,21.58685985368084,2321.8,US/Central,,,,,Education,Auditorium
+Bull_assembly_Goldie,105.12767007257251,Bull,21.58685985368084,4864.1,US/Central,,,,,Entertainment/public assembly,Conference Center
+Bull_education_Krista,113.11462689382881,Bull,21.58685985368084,22263.1,US/Central,,,,,Education,College Laboratory
+Bull_assembly_Gerri,118.74740518781928,Bull,21.58685985368084,11079.8,US/Central,,,,,Entertainment/public assembly,Sports Stadium
+Bull_education_Lyn,92.2215216043002,Bull,21.58685985368084,2418.5,US/Central,,,,,Education,College Classroom
+Bull_lodging_Abby,110.48890364188163,Bull,21.58685985368084,1054.4,US/Central,,,,,Lodging/residential,Dormitory
+Bull_office_Claudia,128.51333215998594,Bull,21.58685985368084,2272.7,US/Central,,,,,Office,Office
+Bull_assembly_Gigi,81.37586602894966,Bull,21.58685985368084,39620.5,US/Central,,,,,Entertainment/public assembly,Sports Stadium
+Bull_office_Rob,80.6993942101906,Bull,21.58685985368084,30885.3,US/Central,,,,,Office,Office
+Bull_education_Hayley,82.61536388589462,Bull,21.58685985368084,17997.4,US/Central,,,,,Education,College Classroom
+Bull_assembly_Beau,98.38822503531806,Bull,21.58685985368084,46789.1,US/Central,,,,,Entertainment/public assembly,Conference Center
+Bull_education_Pamela,74.55926953526753,Bull,21.58685985368084,20904.5,US/Central,,,,,Education,College Classroom
+Bull_education_Antonia,117.39687053559395,Bull,21.58685985368084,37099.0,US/Central,,,,,Education,College Classroom
+Bull_office_Chantel,132.88762700804773,Bull,21.58685985368084,9654.9,US/Central,,,,,Office,Office
+Bull_education_Brain,153.8164632205643,Bull,21.58685985368084,21365.2,US/Central,,,,,Education,College Laboratory
+Bull_education_Fabiola,157.42244529946674,Bull,21.58685985368084,10370.1,US/Central,,,,,Education,College Classroom
+Bull_education_Olive,110.45444812690846,Bull,21.58685985368084,5370.8,US/Central,,,,,Education,College Classroom
+Bull_office_Sally,131.88636393132,Bull,21.58685985368084,7705.3,US/Central,,,,,Office,Office
+Bull_education_Elva,91.73134288605978,Bull,21.58685985368084,5631.9,US/Central,,,,,Education,College Classroom
+Bull_education_Nichole,91.98743847792551,Bull,21.58685985368084,19058.2,US/Central,,,,,Education,Student Union
+Bull_lodging_Jeremiah,97.29062235989862,Bull,21.58685985368084,5326.5,US/Central,,,,,Lodging/residential,Dormitory
+Bull_education_Violeta,117.68443317231834,Bull,21.58685985368084,10330.3,US/Central,,,,,Education,College Classroom
+Bull_education_Stewart,152.7977246887219,Bull,21.58685985368084,7212.2,US/Central,,,,,Education,College Laboratory
+Bull_assembly_Nathanial,86.18668017835427,Bull,21.58685985368084,23436.5,US/Central,,,,,Entertainment/public assembly,Museum
+Bull_education_Brady,81.34841193455246,Bull,21.58685985368084,3636.5,US/Central,,,,,Education,College Classroom
+Bull_education_Mervin,80.84653988378236,Bull,21.58685985368084,20255.1,US/Central,,,,,Education,College Classroom
+Bull_education_Lenny,72.80891289669142,Bull,21.58685985368084,4294.9,US/Central,,,,,Education,College Classroom
+Bull_assembly_Vanessa,92.68814279676272,Bull,21.58685985368084,12776.2,US/Central,,,,,Entertainment/public assembly,Museum
+Bull_education_Nina,180.81386530376722,Bull,21.58685985368084,12131.0,US/Central,,,,,Education,College Laboratory
+Bull_office_Nicolas,91.49912519940308,Bull,21.58685985368084,1943.3,US/Central,,,,,Office,Office
+Bull_lodging_Hugo,86.9664008334677,Bull,21.58685985368084,8062.7,US/Central,,,,,Lodging/residential,Dormitory
+Bull_office_Yvonne,80.56762118815728,Bull,21.58685985368084,18019.5,US/Central,,,,,Office,Office
+Bull_education_Brandi,84.13116901020128,Bull,21.58685985368084,2901.6,US/Central,,,,,Education,College Classroom
+Bull_education_Brenda,87.72733407550724,Bull,21.58685985368084,14652.9,US/Central,,,,,Education,College Classroom
+Bull_office_Hilton,76.94459386767079,Bull,21.58685985368084,743.6,US/Central,,,,,Office,Office
+Bull_education_Miquel,99.16227366742037,Bull,21.58685985368084,22820.4,US/Central,,,,,Education,College Classroom
+Wolf_education_Cody,80.88250142099281,Wolf,9.957812053698945,2639.0,Europe/Dublin,,1.0,,,Education,College Classroom
+Wolf_office_Darleen,75.42906076250993,Wolf,9.957812053698945,5036.0,Europe/Dublin,,,,,Office,Office
+Wolf_education_Anisa,188.93613054142443,Wolf,9.957812053698945,11008.0,Europe/Dublin,,,,,Education,College Classroom
+Wolf_retail_Toshia,147.91450314801617,Wolf,9.957812053698945,4209.0,Europe/Dublin,,2.0,,,Retail,Retail
+Wolf_education_Katie,83.49012598109168,Wolf,9.957812053698945,2803.0,Europe/Dublin,,3.0,,,Education,College Classroom
+Wolf_education_Tammie,92.83184174004595,Wolf,9.957812053698945,7836.0,Europe/Dublin,,,,,Education,College Classroom
+Wolf_education_Laurinda,101.8280832687373,Wolf,9.957812053698945,18706.0,Europe/Dublin,,,,,Education,College Classroom
+Wolf_office_Cary,182.02145792284867,Wolf,9.957812053698945,11795.0,Europe/Dublin,,,,,Office,Office
+Wolf_office_Joana,95.94862361623618,Wolf,9.957812053698945,1355.0,Europe/Dublin,,,,,Office,Office
+Wolf_education_Loren,166.25228958162427,Wolf,9.957812053698945,12190.0,Europe/Dublin,,,,,Education,College Classroom
+Wolf_education_Tori,173.6525206879532,Wolf,9.957812053698945,19044.9,Europe/Dublin,,4.0,,D1,Education,College Classroom
+Wolf_education_Ursula,88.49137381233032,Wolf,9.957812053698945,13998.0,Europe/Dublin,,4.0,,C1,Education,College Classroom
+Wolf_education_Bobby,82.4646891676196,Wolf,9.957812053698945,10494.0,Europe/Dublin,,,,,Education,College Classroom
+Wolf_retail_Marcella,169.25959022038566,Wolf,9.957812053698945,363.0,Europe/Dublin,,1.0,,,Retail,Retail
+Wolf_education_Josefa,92.86330416666667,Wolf,9.957812053698945,750.0,Europe/Dublin,,,,,Education,School
+Wolf_retail_Harriett,96.14917371592017,Wolf,9.957812053698945,4108.0,Europe/Dublin,,,,,Retail,Retail
+Wolf_education_Eulalia,75.59313911991062,Wolf,9.957812053698945,8056.0,Europe/Dublin,,4.0,,D1,Education,College Classroom
+Hog_education_Hallie,191.51415331865053,Hog,9.56103762827822,2996.7,US/Central,,,,,Education,College Laboratory
+Hog_education_Wayne,181.71980875225995,Hog,9.56103762827822,7964.8,US/Central,,,,,Education,College Laboratory
+Hog_other_Noma,88.90482286070234,Hog,9.56103762827822,2568.6,US/Central,,,,,Other,Animal Shelter
+Hog_office_Mari,75.08143366019296,Hog,9.56103762827822,6302.4,US/Central,,,,,Office,Office
+Hog_office_Carri,130.3192112994589,Hog,9.56103762827822,2365.6,US/Central,,,,,Office,Office
+Hog_lodging_Shanti,95.70106609293332,Hog,9.56103762827822,24355.1,US/Central,,,,,Lodging/residential,Dormitory
+Hog_education_Jordan,75.71007057462711,Hog,9.56103762827822,12362.8,US/Central,,,,,Education,College Classroom
+Hog_other_Tobias,148.1291588237943,Hog,9.56103762827822,2220.7,US/Central,,,,,Other,Animal Shelter
+Hog_parking_Antoinette,84.56095809611735,Hog,9.56103762827822,1949.7,US/Central,,,,,Parking,Parking: Enclosed Garage
+Hog_office_Almeda,80.60117385644385,Hog,9.56103762827822,6683.1,US/Central,,,,,Office,Office
+Hog_office_Merilyn,76.87604387313931,Hog,9.56103762827822,3446.3,US/Central,,,,,Office,Office
+Hog_office_Elizbeth,141.07534331180543,Hog,9.56103762827822,8593.5,US/Central,,,,,Office,Office
+Hog_education_Donnie,108.41960672185334,Hog,9.56103762827822,6837.4,US/Central,,,,,Education,Auditorium
+Hog_office_Shawnna,132.9754939844614,Hog,9.56103762827822,27312.6,US/Central,,,,,Office,Office
+Hog_office_Candi,149.44361248189372,Hog,9.56103762827822,18156.7,US/Central,,,,,Office,Office
+Hog_office_Corey,84.9169398947972,Hog,9.56103762827822,12033.9,US/Central,,,,,Office,Office
+Hog_office_Sung,126.98218312503755,Hog,9.56103762827822,3328.6,US/Central,,,,,Office,Office
+Hog_public_Kevin,135.89093741635278,Hog,9.56103762827822,35416.6,US/Central,,,,,Public services,Library
+Hog_services_Marshall,106.91663034624784,Hog,9.56103762827822,6506.9,US/Central,,,,,Services,Maintenance Repair Shop
+Hog_assembly_Letha,108.21132614522537,Hog,9.56103762827822,50664.7,US/Central,,,,,Entertainment/public assembly,Sports Arena
+Hog_office_Sydney,136.42135014268595,Hog,9.56103762827822,8094.7,US/Central,,,,,Office,Office
+Hog_office_Mack,144.081227096266,Hog,9.56103762827822,5332.1,US/Central,,,,,Office,Office
+Hog_office_Clemencia,126.30852843024005,Hog,9.56103762827822,5453.7,US/Central,,,,,Office,Office
+Hog_office_Patrick,98.8879767827529,Hog,9.56103762827822,964.8,US/Central,,,,,Office,Office
+Hog_science_Max,157.8664252108727,Hog,9.56103762827822,8310.7,US/Central,,,,,Technology/science,Lab Building
+Hog_lodging_Mauricio,120.7077102947511,Hog,9.56103762827822,16251.0,US/Central,,,,,Lodging/residential,Dormitory
+Hog_office_Miriam,142.52868311596757,Hog,9.56103762827822,1418.5,US/Central,,,,,Office,Office
+Hog_warehouse_Rosanna,190.38129102956168,Hog,9.56103762827822,981.0,US/Central,,,,,Warehouse/storage,Warehouse (Unconditioned)
+Hog_education_Madge,116.08553389330974,Hog,9.56103762827822,6786.0,US/Central,,,,,Education,Auditorium
+Hog_food_Morgan,180.24179580659796,Hog,9.56103762827822,3085.8,US/Central,,,,,Food sales and service,Bar/Tavern
+Hog_industrial_Quentin,127.45568097940395,Hog,9.56103762827822,7559.7,US/Central,,,,,Manufacturing/industrial,Manufacturing Facility
+Hog_education_Rachael,176.80920444145357,Hog,9.56103762827822,3715.0,US/Central,,,,,Education,College Laboratory
+Hog_assembly_Colette,145.13602453692013,Hog,9.56103762827822,21783.5,US/Central,,,,,Entertainment/public assembly,Ice Arena
+Hog_office_Napoleon,91.56994371391141,Hog,9.56103762827822,12365.4,US/Central,,,,,Office,Office
+Hog_office_Lanell,87.59357158440717,Hog,9.56103762827822,14209.1,US/Central,,,,,Office,Office
+Hog_office_Bessie,76.09732048353852,Hog,9.56103762827822,8975.5,US/Central,,,,,Office,Office
+Hog_office_Randi,96.3127923868962,Hog,9.56103762827822,8556.3,US/Central,,,,,Office,Office
+Hog_office_Rolando,150.72451271245183,Hog,9.56103762827822,18033.5,US/Central,,,,,Office,Office
+Hog_office_Bill,190.747627341034,Hog,9.56103762827822,13375.5,US/Central,,,,,Office,Office
+Hog_office_Mike,96.58927158409993,Hog,9.56103762827822,5924.5,US/Central,,,,,Office,Office
+Hog_office_Charla,167.75986696721054,Hog,9.56103762827822,9493.9,US/Central,,,,,Office,Office
+Hog_lodging_Ora,89.33029349896901,Hog,9.56103762827822,21678.1,US/Central,,,,,Lodging/residential,Dormitory
+Hog_industrial_Mariah,136.3345579954955,Hog,9.56103762827822,1065.6,US/Central,,,,,Manufacturing/industrial,Greenhouse
+Hog_health_Hisako,160.1880625641843,Hog,9.56103762827822,11295.6,US/Central,,,,,Healthcare,Hospital
+Hog_office_Leanne,151.69053690770457,Hog,9.56103762827822,7646.1,US/Central,,,,,Office,Office
+Hog_office_Josefina,108.77292657347435,Hog,9.56103762827822,14636.4,US/Central,,,,,Office,Office
+Hog_education_Jared,91.77615533464865,Hog,9.56103762827822,1317.8,US/Central,,,,,Education,College Classroom
+Hog_office_Shon,87.33797959886702,Hog,9.56103762827822,7837.8,US/Central,,,,,Office,Office
+Hog_education_Bruno,165.38992499284285,Hog,9.56103762827822,13972.0,US/Central,,,,,Education,College Laboratory
+Hog_lodging_Nikki,74.44963191467866,Hog,9.56103762827822,6929.1,US/Central,,,,,Lodging/residential,Dormitory
+Hog_office_Catalina,94.52463370337117,Hog,9.56103762827822,4900.4,US/Central,,,,,Office,Office
+Hog_lodging_Celeste,77.34401335209247,Hog,9.56103762827822,10874.7,US/Central,,,,,Lodging/residential,Dormitory
+Hog_education_Roberto,185.93828140682058,Hog,9.56103762827822,9365.8,US/Central,,,,,Education,College Classroom
+Hog_lodging_Retha,181.27791670021278,Hog,9.56103762827822,17389.0,US/Central,,,,,Lodging/residential,Dormitory
+Hog_public_Octavia,92.4289934679975,Hog,9.56103762827822,18554.8,US/Central,,,,,Public services,Library
+Hog_office_Lizzie,75.80932020170795,Hog,9.56103762827822,10351.6,US/Central,,,,,Office,Office
+Hog_parking_Cliff,96.96088058428461,Hog,9.56103762827822,9320.8,US/Central,,,,,Parking,Parking: Enclosed Garage
+Hog_education_Jewel,72.43239162032356,Hog,9.56103762827822,7912.0,US/Central,,,,,Education,Student Union
+Hog_lodging_Francisco,96.89860954064817,Hog,9.56103762827822,14592.3,US/Central,,,,,Lodging/residential,Dormitory
+Hog_assembly_Dona,166.15724750667684,Hog,9.56103762827822,15501.4,US/Central,,,,,Entertainment/public assembly,Ice Arena
+Hog_office_Byron,104.51589558173474,Hog,9.56103762827822,80038.2,US/Central,,,,,Office,Office
+Hog_assembly_Pedro,79.4855626117566,Hog,9.56103762827822,24942.6,US/Central,,,,,Entertainment/public assembly,Gymnasium
+Hog_education_Robert,157.89167629721365,Hog,9.56103762827822,30925.9,US/Central,,,,,Education,Student Union
+Hog_office_Emmanuel,129.51647909756227,Hog,9.56103762827822,1899.3,US/Central,,,,,Office,Office
+Hog_public_Crystal,96.12490127387373,Hog,9.56103762827822,27388.9,US/Central,,,,,Public services,Library
+Hog_office_Vera,116.845818353274,Hog,9.56103762827822,8483.5,US/Central,,,,,Office,Office
+Hog_office_Richelle,80.6725501868545,Hog,9.56103762827822,9285.3,US/Central,,,,,Office,Office
+Hog_lodging_Hal,91.0779118305844,Hog,9.56103762827822,14241.9,US/Central,,,,,Lodging/residential,Dormitory
+Hog_assembly_Jasmine,140.38159688376206,Hog,9.56103762827822,5314.1,US/Central,,,,,Entertainment/public assembly,Gymnasium
+Hog_office_Garrett,119.83640247108308,Hog,9.56103762827822,28339.8,US/Central,,,,,Office,Office
+Eagle_office_Ryan,110.95591397849462,Eagle,13.168835909427935,2092.5,US/Eastern,,,,,Office,Office
+Eagle_assembly_Herbert,78.53845346690416,Eagle,13.168835909427935,7691.3,US/Eastern,,,,,Entertainment/public assembly,Athletic
+Eagle_public_Alvin,129.9972563567963,Eagle,13.168835909427935,7110.5,US/Eastern,,,,,Public services,Library
+Eagle_office_Henriette,119.23647619757048,Eagle,13.168835909427935,2181.5,US/Eastern,,,,,Office,Office
+Eagle_health_Reba,188.41893760804652,Eagle,13.168835909427935,19089.0,US/Eastern,,,,,Healthcare,Patient Care
+Eagle_lodging_Edgardo,81.29043479470346,Eagle,13.168835909427935,5392.2,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_office_Yadira,76.40397914086866,Eagle,13.168835909427935,15101.3,US/Eastern,,,,,Office,Office
+Eagle_lodging_Dawn,112.10576675625228,Eagle,13.168835909427935,5785.9,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_lodging_Tressa,113.52608937548433,Eagle,13.168835909427935,5032.7,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_office_Efrain,106.16525688274308,Eagle,13.168835909427935,3995.5,US/Eastern,,,,,Office,Office
+Eagle_education_Lino,128.4140540046006,Eagle,13.168835909427935,12911.4,US/Eastern,,,,,Education,Classroom
+Eagle_education_Wesley,170.39678694184093,Eagle,13.168835909427935,6604.3,US/Eastern,,,,,Education,Classroom
+Eagle_lodging_Andy,77.62502990137622,Eagle,13.168835909427935,6205.4,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_office_Lane,87.60506897658004,Eagle,13.168835909427935,4675.5,US/Eastern,,,,,Office,Office
+Eagle_health_Vincenza,143.27247737859645,Eagle,13.168835909427935,3284.5,US/Eastern,,,,,Healthcare,Patient Care
+Eagle_office_Dallas,130.4248810466701,Eagle,13.168835909427935,3522.6,US/Eastern,,,,,Office,Office
+Eagle_assembly_Ian,114.46029677423107,Eagle,13.168835909427935,34376.3,US/Eastern,,,,,Entertainment/public assembly,Athletic
+Eagle_office_Jackie,107.36204312132884,Eagle,13.168835909427935,5737.3,US/Eastern,,,,,Office,Office
+Eagle_office_Isidro,90.28497993416603,Eagle,13.168835909427935,2217.7,US/Eastern,,,,,Office,Office
+Eagle_education_Samantha,187.36733656787953,Eagle,13.168835909427935,12518.5,US/Eastern,,,,,Education,Research
+Eagle_office_Randolph,160.1730699198503,Eagle,13.168835909427935,6038.7,US/Eastern,,,,,Office,Office
+Eagle_office_Freida,73.69200728617558,Eagle,13.168835909427935,7246.6,US/Eastern,,,,,Office,Office
+Eagle_assembly_Benny,93.67171785883518,Eagle,13.168835909427935,4642.8,US/Eastern,,,,,Entertainment/public assembly,Athletic
+Eagle_office_Sheree,125.82791705354379,Eagle,13.168835909427935,2907.9,US/Eastern,,,,,Office,Office
+Eagle_office_Demetra,139.72878017000681,Eagle,13.168835909427935,9670.2,US/Eastern,,,,,Office,Office
+Eagle_public_Pearle,135.62761242105537,Eagle,13.168835909427935,22990.8,US/Eastern,,,,,Public services,Library
+Eagle_office_Elias,148.966291913146,Eagle,13.168835909427935,5003.8,US/Eastern,,,,,Office,Office
+Eagle_public_Preston,108.05265981215175,Eagle,13.168835909427935,25861.3,US/Eastern,,,,,Public services,Library
+Eagle_public_Ola,130.18610037522393,Eagle,13.168835909427935,8874.7,US/Eastern,,,,,Public services,Library
+Eagle_education_Will,170.86883916990922,Eagle,13.168835909427935,5782.5,US/Eastern,,,,,Education,Research
+Eagle_lodging_Stephanie,99.79602307791667,Eagle,13.168835909427935,6967.7,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_public_Missy,146.7169687270726,Eagle,13.168835909427935,1908.2,US/Eastern,,,,,Public services,Public Service
+Eagle_lodging_Terri,127.48620610879847,Eagle,13.168835909427935,7422.9,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_lodging_Trina,77.93528491420625,Eagle,13.168835909427935,5320.9,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_education_Maragret,157.6109754111708,Eagle,13.168835909427935,1228.2,US/Eastern,,,,,Education,Research
+Eagle_office_Lillian,92.59723200388102,Eagle,13.168835909427935,4844.1,US/Eastern,,,,,Office,Office
+Eagle_office_Damian,148.9676200501584,Eagle,13.168835909427935,10606.4,US/Eastern,,,,,Office,Office
+Eagle_health_Amy,134.73362914710034,Eagle,13.168835909427935,5238.6,US/Eastern,,,,,Healthcare,Support
+Eagle_health_Reuben,162.3934207045086,Eagle,13.168835909427935,12083.6,US/Eastern,,,,,Healthcare,Patient Care
+Eagle_education_Teresa,158.33264836004406,Eagle,13.168835909427935,5628.2,US/Eastern,,,,,Education,Research
+Eagle_lodging_Casey,111.53651370091964,Eagle,13.168835909427935,6132.8,US/Eastern,,,,,Lodging/residential,Housing
+Eagle_office_Elvis,107.08787543113215,Eagle,13.168835909427935,3972.1,US/Eastern,,,,,Office,Office
