@@ -1,0 +1,6 @@
+subset,model,fold,n_features,train_buildings,validation_buildings,rmse,mae,r2,cv_rmse,best_params
+A,Random Forest (deep),1,23,931,233,180.02687184276502,87.32123748837293,0.0880704103932356,1.045474142122436,"{'n_estimators': 400, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_samples': 0.85, 'max_features': 0.5, 'max_depth': 16}"
+A,Random Forest (deep),2,23,931,233,327.7796434407551,101.50194060874229,0.008311380907308763,1.8432236155370987,"{'n_estimators': 400, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_samples': 0.85, 'max_features': 0.5, 'max_depth': 16}"
+A,Random Forest (deep),3,23,931,233,150.59654208659873,81.37278379758584,0.23284004583625661,0.9433475211722457,"{'n_estimators': 1600, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_samples': None, 'max_features': 0.2, 'max_depth': 32}"
+A,Random Forest (deep),4,23,931,233,132.8088926397291,69.25745321396052,0.2151346218616238,0.9199792292335174,"{'n_estimators': 400, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_samples': 0.7, 'max_features': 0.3, 'max_depth': 16}"
+A,Random Forest (deep),5,23,932,232,248.74542828015674,90.01378992736798,0.10502684764507353,1.450039451183523,"{'n_estimators': 400, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_samples': None, 'max_features': 0.5, 'max_depth': 16}"
