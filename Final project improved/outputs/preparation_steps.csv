@@ -1,0 +1,18 @@
+script,step,description,buildings_before,buildings_after,buildings_removed
+1_metadata_preparation,1,Load metadata.csv,1636,1636,0
+1_metadata_preparation,2,"Keep the assignment's columns, heatingtype and meter columns",1636,1636,0
+1_metadata_preparation,3,Set index to building_id,1636,1636,0
+1_metadata_preparation,4,Drop rows missing building_id or sqm,1636,1636,0
+1_metadata_preparation,5,Add meter indicators has_<meter>,1636,1636,0
+2_weather_preparation,1,"Load weather.csv (331,166 hourly rows)",1636,1636,0
+2_weather_preparation,2,"Climate features for 19 sites: T_amb, HDD, CDD, T_std, dew_mean",1636,1636,0
+2_weather_preparation,3,Map site climate features to each building,1636,1636,0
+2_weather_preparation,4,Drop buildings without valid site_id or T_amb,1636,1636,0
+3_electricity_density,1,"Read electricity (17,544 hours) and metadata",1578,1578,0
+3_electricity_density,2,Drop buildings with more than 5% missing hours,1578,1019,559
+3_electricity_density,3,"Interpolate and backward-fill 131,160 missing hourly values",1019,1019,0
+3_electricity_density,4,Sum electricity use per year,1019,1019,0
+3_electricity_density,5,Average the two years,1019,1019,0
+3_electricity_density,6,Divide by sqm (buildings without prepared metadata removed),1019,1019,0
+3_electricity_density,7,"Flag outliers outside [16.5, 850.0] (40 flagged, kept)",1019,1019,0
+3_electricity_density,8,Merge metadata and climate features with the target,1019,1019,0
